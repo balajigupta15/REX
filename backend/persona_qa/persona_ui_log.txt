@@ -1,0 +1,49 @@
+shot persona-A1-vague
+shot persona-A2-results
+shot persona-A3-refine
+shot persona-A-tracker
+shot persona-A-closed
+shot persona-A4-last-time
+shot persona-B1-refine
+shot persona-B-tracker
+shot persona-B-closed
+shot persona-B2-last-time
+shot persona-D1-journal
+shot persona-D2-check-wait-case
+shot persona-D2-check-proceed-case
+{
+ "A_vague": "No supported entry rule found. Rex understands: N-day-high breakout, moving-average crossover, RSI oversold/overbought, mean-reversion z-score. Nothing was guessed. Try wording like: \"Buy RELIANCE when it breaks above the 20 day high, hold 10 days, 5% stop loss, 10% profit target\".",
+ "A_parsed": "Parsed rules | Rules parser | confidence 92% | cached | Buy RELIANCE.NS when close breaks above the prior 20-day high; exit: after 10 trading days, 5% stop-loss, 10% take-profit. | ticker: RELIANCE.NS | n: 20 | hold_days: 10 | stop_pct: 5 | tp_pct: 10 | Highlighted = taken from your text; grey = default. Form below is filled and editable.",
+ "A_lasttime_before": {
+  "head": "As of 30 Sep 2026 (replayed from real data) breakout on RELIANCE: LOST, test -0.5%; price then moved -1.9% in 20 days.",
+  "lesson": "Lesson: It lost money on the locked year. Change the rule or the stock before trusting it."
+ },
+ "A_results": "R | Rex | coach with a memory | Home | Build | Results | Refine | Tracker | Journal | Pre-Trade Check | Scout | Research | Memory | RELIANCE.NS · breakout | 2022-03-28 to 2026-10-30. Cost 15 bps per round trip. Benchmark is buy & hold with the same data. | Refine this strategy | Train | Locked year | Full | Full period | 2022-03-28 to 2026-10-30 | · strategy -14.3% vs buy & hold -0.9% | TOTAL RETURN | -14.3% | Buy & hold -0.9% | MAX DRAWDOWN | -18.1% | Buy & hold -27.2% | SHARPE | -0.28 | Buy & hold 0.10 | TRADES | 27 | Exposure 23% of days | WIN RATE | 37% | PROFIT FACTOR | 0.75 | AVG TRADE | -0.49% | 95% CI -1.9% to +1.0% | CAGR | -3.4% | 1136 days | Equity curve vs buy & hold | Growth of ",
+ "A_refine": "overfit :: LOCKED-YEAR VERDICT | OVERFIT | Overfit warning: the refinement looked good in training but collapsed on the locked final year.",
+ "A_track": {
+  "tiles": "All sessions | RELIANCE · breakout | your trade in your broker | active | original | NSE Closed (weekend) | Refresh now | LIVE PRICE | ₹1,164.9 | 2026-10-30 15:30 IST (close) · stale | YOUR P&L (AFTER COSTS) | -2.67% | -₹319 on 10 @ ₹1,195 (long) | DISTANCE TO STOP | +2.5% | stop at ₹1,135.25 | DISTANCE TO TARGET | +12.8% | target at ₹1,314.5 · max hold 10d | Yahoo Finance NSE prices are delayed about 15 minutes. · Market: Closed (weekend) (IST now 2026-11-01 07:15 IST). Next open Mon 02 Nov 09:15 IST. · Price shown is the last close in the bundled offline cache (REX_OFFLINE=1) (2026-10-30 15:",
+  "alert": null,
+  "verdict": "LOST",
+  "lesson": "Lesson: A loss inside the plan is a cost of doing business; compare it with the strategy's average loss before changing the rules."
+ },
+ "A_lasttime_after": {
+  "head": "On 1 Nov 2026 you took BUY RELIANCE (breakout) in your broker: LOST, -2.7% in 5d; not enough trading days have passed yet to see how price moved.",
+  "lesson": "Lesson: A loss inside the plan is a cost of doing business; compare it with the strategy's average loss before changing the rules."
+ },
+ "B_refine": "ok :: LOCKED-YEAR VERDICT | PASSED | Refinement held up on the locked year.",
+ "B_track": {
+  "tiles": "All sessions | TCS · ma cross | your trade in your broker | active | refined | NSE Closed (weekend) | Refresh now | Strategy says exit now | Stop-loss level Rs 2,516.64 (2% against your entry) was reached on 26 Oct. Rex only tracks: close it in your broker if you decide to follow the strategy. | LIVE PRICE | ₹2,502.6 | 2026-10-30 15:30 IST (close) · stale | YOUR P&L (AFTER COSTS) | -2.70% | -₹346 on 5 @ ₹2,568 (long) | DISTANCE TO STOP | -0.6% | stop at ₹2,516.64 | DISTANCE TO TARGET | +14.9% | target at ₹2,876.16 · max hold 15d | Yahoo Finance NSE prices are delayed about 15 minutes. · Market",
+  "alert": "Strategy says exit now Stop-loss level Rs 2,516.64 (2% against your entry) was reached on 26 Oct. Rex only tracks: close it in your broker if you decide to follow the strategy.",
+  "verdict": "LOST",
+  "lesson": "Lesson: Price went past your strategy's stop level before you closed. Honour the stop next time; it is the one rule that protects the account."
+ },
+ "B_lasttime_after": {
+  "head": "On 1 Nov 2026 you took BUY TCS (ma_cross) in your broker: LOST, -2.7% in 9d; not enough trading days have passed yet to see how price moved.",
+  "lesson": "Lesson: Price went past your strategy's stop level before you closed. Honour the stop next time; it is the one rule that protects the account."
+ },
+ "D_import": "Import result | imported from your file | ROWS READ | 154 | ROWS REJECTED | 0 | ROUND TRIPS | 77 | 77 new, 0 duplicates skipped | OPEN POSITIONS | 0 | excluded from stats | COLUMN MAPPING | symbol ← symbol | side ← trade_type | qty ← quantity | price ← price | date ← trade_date | exchange ← exchange | segment ← segment | time ← order_execution_time",
+ "D_mistakes": "Top repeated mistakes | Setups where you do clearly worse than your own average. Small samples: hints, not proof. | repeat mistake | n=6 · win 17% vs 67% · avg -2.97% · -₹1,330/trade | When you bought with gap up at the open (1% or more): 6 trades, win rate 17% (your average is 67%), avg return -3.0%. This is a repeat mistake pattern. Small sample: a hint, not proof. | Wait for: do not buy the gap-up open; let the first session settle | repeat mistake | n=9 · win 44% vs 67% · avg -1.39% · -₹656/trade | When you bought with normal volume and calm volatility regime: 9 trades, win rate 44% (your average is 67%), avg return -1.4%. This is a repeat mistake pattern. Small sample: a hint, not proof. | Where y",
+ "D_check_wait-case": "wait :: HDFCBANK.NS · LONG · 2025-12-24 | WAIT | You have repeatedly lost money in this exact setup. | high confidence",
+ "D_check_proceed-case": "proceed :: JIOFIN.NS · LONG · 2025-06-10 | PROCEED | Nothing in your history argues against this entry. | high confidence"
+}
+PROBLEMS: none

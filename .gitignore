@@ -1,0 +1,18 @@
+node_modules/
+.next/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.env.local
+*.log
+.DS_Store
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+
+# pipeline store (generated)
+backend/data_store/
+data_store/
+/.run/

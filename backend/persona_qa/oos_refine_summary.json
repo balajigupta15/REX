@@ -1,0 +1,81 @@
+[
+ {
+  "group": "all cases",
+  "cases": 76,
+  "original_avg_ret": -4.39,
+  "refined_always_avg_ret": -8.3,
+  "follow_rex_avg_ret": -4.68,
+  "buy_hold_avg_ret": -3.45,
+  "original_avg_mdd": -14.98,
+  "refined_always_avg_mdd": -19.84,
+  "follow_rex_avg_mdd": -16.31,
+  "refined_beats_original": 22,
+  "refined_worse_than_original": 37
+ },
+ {
+  "group": "refine changed the rules",
+  "cases": 59,
+  "original_avg_ret": -4.47,
+  "refined_always_avg_ret": -9.5,
+  "follow_rex_avg_ret": -4.84,
+  "buy_hold_avg_ret": -2.23,
+  "original_avg_mdd": -15.21,
+  "refined_always_avg_mdd": -21.48,
+  "follow_rex_avg_mdd": -16.93,
+  "refined_beats_original": 22,
+  "refined_worse_than_original": 37
+ },
+ {
+  "group": "flagged OVERFIT",
+  "cases": 37,
+  "original_avg_ret": -6.69,
+  "refined_always_avg_ret": -14.13,
+  "follow_rex_avg_ret": -6.69,
+  "buy_hold_avg_ret": -8.44,
+  "original_avg_mdd": -16.78,
+  "refined_always_avg_mdd": -24.03,
+  "follow_rex_avg_mdd": -16.78,
+  "refined_beats_original": 10,
+  "refined_worse_than_original": 27
+ },
+ {
+  "group": "flagged held-up (ok)",
+  "cases": 22,
+  "original_avg_ret": -0.73,
+  "refined_always_avg_ret": -1.71,
+  "follow_rex_avg_ret": -1.71,
+  "buy_hold_avg_ret": 8.22,
+  "original_avg_mdd": -12.58,
+  "refined_always_avg_mdd": -17.18,
+  "follow_rex_avg_mdd": -17.18,
+  "refined_beats_original": 12,
+  "refined_worse_than_original": 10
+ },
+ null,
+ {
+  "group": "cut 2024-04-30 (30 mo forward)",
+  "cases": 36,
+  "original_avg_ret": -3.87,
+  "refined_always_avg_ret": -7.14,
+  "follow_rex_avg_ret": -3.72,
+  "buy_hold_avg_ret": 2.11,
+  "original_avg_mdd": -17.07,
+  "refined_always_avg_mdd": -21.65,
+  "follow_rex_avg_mdd": -18.67,
+  "refined_beats_original": 10,
+  "refined_worse_than_original": 17
+ },
+ {
+  "group": "cut 2025-04-30 (18 mo forward)",
+  "cases": 40,
+  "original_avg_ret": -4.86,
+  "refined_always_avg_ret": -9.35,
+  "follow_rex_avg_ret": -5.54,
+  "buy_hold_avg_ret": -8.45,
+  "original_avg_mdd": -13.1,
+  "refined_always_avg_mdd": -18.21,
+  "follow_rex_avg_mdd": -14.19,
+  "refined_beats_original": 12,
+  "refined_worse_than_original": 20
+ }
+]

@@ -1,0 +1,134 @@
+{
+ "rows": [
+  {
+   "seed": 1,
+   "train_n": 73,
+   "test_n": 27,
+   "ignore_pnl": -8451,
+   "follow_pnl": -4422,
+   "ignore_mdd": -21116,
+   "follow_mdd": -13233,
+   "skipped_pnl_if_taken": -56
+  },
+  {
+   "seed": 2,
+   "train_n": 74,
+   "test_n": 32,
+   "ignore_pnl": -15018,
+   "follow_pnl": -16660,
+   "ignore_mdd": -33791,
+   "follow_mdd": -28797,
+   "skipped_pnl_if_taken": 0
+  },
+  {
+   "seed": 3,
+   "train_n": 81,
+   "test_n": 23,
+   "ignore_pnl": -11100,
+   "follow_pnl": -896,
+   "ignore_mdd": -22519,
+   "follow_mdd": -16041,
+   "skipped_pnl_if_taken": -7906
+  },
+  {
+   "seed": 4,
+   "train_n": 72,
+   "test_n": 25,
+   "ignore_pnl": -8203,
+   "follow_pnl": -8289,
+   "ignore_mdd": -20438,
+   "follow_mdd": -17268,
+   "skipped_pnl_if_taken": -667
+  },
+  {
+   "seed": 5,
+   "train_n": 80,
+   "test_n": 27,
+   "ignore_pnl": -8109,
+   "follow_pnl": -4921,
+   "ignore_mdd": -21490,
+   "follow_mdd": -13806,
+   "skipped_pnl_if_taken": 0
+  },
+  {
+   "seed": 6,
+   "train_n": 86,
+   "test_n": 23,
+   "ignore_pnl": -6155,
+   "follow_pnl": -2805,
+   "ignore_mdd": -19059,
+   "follow_mdd": -12912,
+   "skipped_pnl_if_taken": -2514
+  },
+  {
+   "seed": 7,
+   "train_n": 77,
+   "test_n": 29,
+   "ignore_pnl": -4961,
+   "follow_pnl": -8973,
+   "ignore_mdd": -22958,
+   "follow_mdd": -20369,
+   "skipped_pnl_if_taken": 4711
+  },
+  {
+   "seed": 8,
+   "train_n": 71,
+   "test_n": 28,
+   "ignore_pnl": -4499,
+   "follow_pnl": -6567,
+   "ignore_mdd": -23356,
+   "follow_mdd": -21682,
+   "skipped_pnl_if_taken": 0
+  },
+  {
+   "seed": 9,
+   "train_n": 78,
+   "test_n": 27,
+   "ignore_pnl": 2988,
+   "follow_pnl": -668,
+   "ignore_mdd": -13681,
+   "follow_mdd": -11895,
+   "skipped_pnl_if_taken": 1267
+  },
+  {
+   "seed": 10,
+   "train_n": 74,
+   "test_n": 22,
+   "ignore_pnl": -14553,
+   "follow_pnl": -11881,
+   "ignore_mdd": -20388,
+   "follow_mdd": -17151,
+   "skipped_pnl_if_taken": 0
+  },
+  {
+   "seed": 11,
+   "train_n": 73,
+   "test_n": 27,
+   "ignore_pnl": -9799,
+   "follow_pnl": -6210,
+   "ignore_mdd": -19351,
+   "follow_mdd": -11480,
+   "skipped_pnl_if_taken": -339
+  },
+  {
+   "seed": 12,
+   "train_n": 79,
+   "test_n": 29,
+   "ignore_pnl": -29321,
+   "follow_pnl": -22078,
+   "ignore_mdd": -43901,
+   "follow_mdd": -30966,
+   "skipped_pnl_if_taken": -5306
+  }
+ ],
+ "aggregate": {
+  "traders": 12,
+  "follow_better_pnl": 7,
+  "follow_better_mdd": 12,
+  "sum_ignore_pnl": -117181,
+  "sum_follow_pnl": -94370,
+  "sum_ignore_mdd": -282048,
+  "sum_follow_mdd": -215600,
+  "sum_wait_pnl_if_taken": -10810
+ }
+}

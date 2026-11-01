@@ -1,0 +1,86 @@
+# Rex Lite as a small real platform:  cp .env.example .env && docker compose up --build
+#   web  http://localhost:3000   api  http://localhost:8000/docs   pipeline: keeps the Parquet store fresh (no ports)
+name: rexlite
+
+x-backend: &backend
+  build: { context: ./backend }
+  env_file:
+    - path: .env          # optional: everything works without it (offline cache)
+      required: false
+  restart: unless-stopped
+
+services:
+  yb-store-init:
+    image: busybox:1.37.0
+    user: "0:0"
+    volumes: ["yugabyte:/ybdata"]
+    command: ["sh", "-c", "chown -R 10001:100 /ybdata && chmod 700 /ybdata"]
+    restart: "no"
+
+  yugabyte:
+    image: yugabytedb/yugabyte:latest
+    command: ["bin/yugabyted", "start", "--background=false"]
+    ports: ["127.0.0.1:5434:5433"]  # Local-only host port 5434; container YSQL listens on 5433
+    volumes:
+      - yugabyte:/home/yugabyte/var
+    restart: unless-stopped
+    depends_on: { yb-store-init: { condition: service_completed_successfully } }
+    healthcheck:
+      test: ["CMD-SHELL", "postgres/bin/pg_isready -h $$(hostname) -p 5433 -U yugabyte"]
+      interval: 10s
+      timeout: 5s
+      start_period: 60s
+      retries: 12
+
+  api:
+    <<: *backend
+    environment:
+      REX_OFFLINE: ${REX_OFFLINE:-1}            # 1 = bundled cache for the engine/tracker; 0 = live yfinance/Binance
+      REX_TRACK_INTERVAL: ${REX_TRACK_INTERVAL:-60}
+      # Primary operational DB = YugabyteDB (YSQL). If it is unset/unreachable at API start-up Rex falls back to the SQLite volume
+      # and /health says which one is live ("db": "yugabyte" | "sqlite"). Set REX_DB_URL= (empty) in .env to force SQLite.
+      REX_DB_URL: ${REX_DB_URL-postgresql://yugabyte@yugabyte:5433/rexlite}
+    ports: ["8000:8000"]
+    depends_on: { yugabyte: { condition: service_healthy, required: false } }
+    volumes:
+      - sqlite:/data/sqlite
+      - store:/data/store
+      - data_cache:/data/cache
+    # first start: copy the shipped demo memory DB into the empty volume (never overwrites an existing one)
+    command: ["sh", "-c", "[ -f \"$$REX_DB\" ] || cp rexlite_memory.sqlite \"$$REX_DB\"; exec uvicorn app.main:app --host 0.0.0.0 --port 8000"]
+
+  pipeline:
+    <<: *backend
+    depends_on:
+      api: { condition: service_healthy }
+      yugabyte: { condition: service_healthy, required: false }
+    environment:
+      REX_DB_URL: ${REX_DB_URL-postgresql://yugabyte@yugabyte:5433/rexlite}   # shared pipeline run log; falls back to the SQLite catalog
+      # Live by default: the pipeline is the thing that talks to yfinance/Binance. Set REX_PIPELINE_OFFLINE=1 to seed from the bundled cache only.
+      REX_PIPELINE_OFFLINE: ${REX_PIPELINE_OFFLINE:-0}
+      REX_OFFLINE: ${REX_OFFLINE:-1}
+    volumes:
+      - store:/data/store
+      - data_cache:/data/cache
+    command: ["python", "-m", "pipeline", "schedule"]
+    healthcheck:
+      test: ["CMD", "python", "-m", "pipeline", "health"]
+      interval: 60s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
+
+  web:
+    build:
+      context: ./web
+      args:
+        NEXT_PUBLIC_API: ${NEXT_PUBLIC_API:-http://localhost:8000}   # the URL your BROWSER uses for the API
+    depends_on: { api: { condition: service_healthy } }
+    ports: ["3000:3000"]
+    restart: unless-stopped
+
+volumes:
+  yugabyte:
+  sqlite:
+  store:
+  data_cache:

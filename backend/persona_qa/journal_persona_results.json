@@ -1,0 +1,3104 @@
+{
+ "seed": 7,
+ "setup": {
+  "generated": 109,
+  "uploaded_round_trips": 77,
+  "test_trades": 29,
+  "import_summary": {
+   "import_id": "ad4b9313b1fa",
+   "trades": [
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 100.0,
+     "entry_date": "2022-02-01",
+     "exit_date": "2022-03-24",
+     "avg_entry": 497.58,
+     "avg_exit": 445.57,
+     "pnl": -5271.74,
+     "ret": -0.10594751095301257,
+     "hold_days": 51,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "gap_up"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.39,
+       "dma50_gap_pct": 10.82,
+       "volume_ratio": 1.59,
+       "vol_ratio": 0.97,
+       "gap_pct": 1.05
+      },
+      "as_of": "2022-01-31",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -10.59
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 276.0,
+     "entry_date": "2022-02-02",
+     "exit_date": "2022-03-10",
+     "avg_entry": 181.1,
+     "avg_exit": 187.06,
+     "pnl": 1568.75,
+     "ret": 0.03138531198233025,
+     "hold_days": 36,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 3.52,
+       "dma50_gap_pct": 2.88,
+       "volume_ratio": 3.25,
+       "vol_ratio": 0.86,
+       "gap_pct": 0.99
+      },
+      "as_of": "2022-02-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.14
+    },
+    {
+     "symbol": "RELIANCE",
+     "ticker": "RELIANCE.NS",
+     "direction": "long",
+     "qty": 40.0,
+     "entry_date": "2022-04-22",
+     "exit_date": "2022-06-13",
+     "avg_entry": 1249.56,
+     "avg_exit": 1206.08,
+     "pnl": -1812.87,
+     "ret": -0.03627015109318482,
+     "hold_days": 52,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.13,
+       "dma50_gap_pct": 12.43,
+       "volume_ratio": 1.56,
+       "vol_ratio": 0.85,
+       "gap_pct": -0.83
+      },
+      "as_of": "2022-04-21",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -3.63
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 239.0,
+     "entry_date": "2022-04-25",
+     "exit_date": "2022-05-17",
+     "avg_entry": 208.67,
+     "avg_exit": 213.43,
+     "pnl": 1061.98,
+     "ret": 0.021294028849379497,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.68,
+       "dma50_gap_pct": 8.72,
+       "volume_ratio": 0.61,
+       "vol_ratio": 1.04,
+       "gap_pct": -0.88
+      },
+      "as_of": "2022-04-22",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.13
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 223.0,
+     "entry_date": "2022-05-20",
+     "exit_date": "2022-07-01",
+     "avg_entry": 223.35,
+     "avg_exit": 234.86,
+     "pnl": 2490.09,
+     "ret": 0.049994817550929126,
+     "hold_days": 42,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.68,
+       "dma50_gap_pct": 8.17,
+       "volume_ratio": 3.86,
+       "vol_ratio": 1.12,
+       "gap_pct": 0.49
+      },
+      "as_of": "2022-05-19",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.0
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 69.0,
+     "entry_date": "2022-06-01",
+     "exit_date": "2022-07-18",
+     "avg_entry": 719.51,
+     "avg_exit": 742.59,
+     "pnl": 1516.86,
+     "ret": 0.030553327959305692,
+     "hold_days": 47,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.41,
+       "dma50_gap_pct": 3.24,
+       "volume_ratio": 1.62,
+       "vol_ratio": 1.12,
+       "gap_pct": -0.64
+      },
+      "as_of": "2022-05-31",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.06
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 211.0,
+     "entry_date": "2022-07-04",
+     "exit_date": "2022-07-11",
+     "avg_entry": 235.94,
+     "avg_exit": 243.66,
+     "pnl": 1553.02,
+     "ret": 0.031195642960074713,
+     "hold_days": 7,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.72,
+       "dma50_gap_pct": 7.85,
+       "volume_ratio": 3.0,
+       "vol_ratio": 0.95,
+       "gap_pct": 0.46
+      },
+      "as_of": "2022-07-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.12
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 31.0,
+     "entry_date": "2022-07-11",
+     "exit_date": "2022-07-20",
+     "avg_entry": 1601.38,
+     "avg_exit": 1653.65,
+     "pnl": 1544.69,
+     "ret": 0.03111611703655596,
+     "hold_days": 9,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 9.36,
+       "dma50_gap_pct": 6.64,
+       "volume_ratio": 3.24,
+       "vol_ratio": 1.14,
+       "gap_pct": -0.15
+      },
+      "as_of": "2022-07-08",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.11
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 103.0,
+     "entry_date": "2022-08-10",
+     "exit_date": "2022-09-01",
+     "avg_entry": 484.53,
+     "avg_exit": 495.45,
+     "pnl": 1049.06,
+     "ret": 0.02102040121354718,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "spike",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.3,
+       "dma50_gap_pct": 7.76,
+       "volume_ratio": 2.54,
+       "vol_ratio": 0.75,
+       "gap_pct": 0.22
+      },
+      "as_of": "2022-08-08",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.1
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 71.0,
+     "entry_date": "2022-09-05",
+     "exit_date": "2022-09-20",
+     "avg_entry": 703.43,
+     "avg_exit": 719.81,
+     "pnl": 1087.19,
+     "ret": 0.02176843467011642,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.95,
+       "dma50_gap_pct": 5.09,
+       "volume_ratio": 0.98,
+       "vol_ratio": 0.74,
+       "gap_pct": 0.04
+      },
+      "as_of": "2022-09-02",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.18
+    },
+    {
+     "symbol": "RELIANCE",
+     "ticker": "RELIANCE.NS",
+     "direction": "long",
+     "qty": 42.0,
+     "entry_date": "2022-09-14",
+     "exit_date": "2022-09-28",
+     "avg_entry": 1170.07,
+     "avg_exit": 1059.86,
+     "pnl": -4699.06,
+     "ret": -0.09562030263146654,
+     "hold_days": 14,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "gap_down"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.44,
+       "dma50_gap_pct": 3.78,
+       "volume_ratio": 0.81,
+       "vol_ratio": 0.64,
+       "gap_pct": -1.71
+      },
+      "as_of": "2022-09-13",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -9.56
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 94.0,
+     "entry_date": "2022-09-15",
+     "exit_date": "2022-11-04",
+     "avg_entry": 531.91,
+     "avg_exit": 551.79,
+     "pnl": 1792.32,
+     "ret": 0.035846712789757665,
+     "hold_days": 50,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.01,
+       "dma50_gap_pct": 10.18,
+       "volume_ratio": 1.85,
+       "vol_ratio": 0.83,
+       "gap_pct": 0.14
+      },
+      "as_of": "2022-09-14",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.58
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 25.0,
+     "entry_date": "2022-11-02",
+     "exit_date": "2022-12-01",
+     "avg_entry": 1960.28,
+     "avg_exit": 2025.49,
+     "pnl": 1555.52,
+     "ret": 0.03174070668475934,
+     "hold_days": 29,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.58,
+       "dma50_gap_pct": 5.83,
+       "volume_ratio": 2.42,
+       "vol_ratio": 0.95,
+       "gap_pct": 0.6
+      },
+      "as_of": "2022-11-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.17
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 86.0,
+     "entry_date": "2022-11-09",
+     "exit_date": "2022-12-28",
+     "avg_entry": 576.92,
+     "avg_exit": 558.39,
+     "pnl": -1666.81,
+     "ret": -0.03359474883866043,
+     "hold_days": 49,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "gap_up"
+      },
+      "metrics": {
+       "dma20_gap_pct": 9.34,
+       "dma50_gap_pct": 11.54,
+       "volume_ratio": 3.53,
+       "vol_ratio": 0.93,
+       "gap_pct": 1.12
+      },
+      "as_of": "2022-11-07",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -3.36
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 37.0,
+     "entry_date": "2022-11-10",
+     "exit_date": "2022-12-01",
+     "avg_entry": 1333.09,
+     "avg_exit": 1487.58,
+     "pnl": 5637.86,
+     "ret": 0.11430173319130743,
+     "hold_days": 21,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "gap_down"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.22,
+       "dma50_gap_pct": 4.11,
+       "volume_ratio": 0.64,
+       "vol_ratio": 0.86,
+       "gap_pct": -1.73
+      },
+      "as_of": "2022-11-09",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 11.43
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 65.0,
+     "entry_date": "2022-11-14",
+     "exit_date": "2022-12-14",
+     "avg_entry": 763.02,
+     "avg_exit": 786.81,
+     "pnl": 1470.8,
+     "ret": 0.02965535307069273,
+     "hold_days": 30,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 8.95,
+       "dma50_gap_pct": 9.6,
+       "volume_ratio": 4.78,
+       "vol_ratio": 1.0,
+       "gap_pct": 0.05
+      },
+      "as_of": "2022-11-11",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.97
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 61.0,
+     "entry_date": "2022-11-28",
+     "exit_date": "2022-12-08",
+     "avg_entry": 814.62,
+     "avg_exit": 807.21,
+     "pnl": -526.21,
+     "ret": -0.010589443544229173,
+     "hold_days": 10,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.77,
+       "dma50_gap_pct": 5.42,
+       "volume_ratio": 0.49,
+       "vol_ratio": 0.74,
+       "gap_pct": -0.78
+      },
+      "as_of": "2022-11-25",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.06
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 34.0,
+     "entry_date": "2022-12-08",
+     "exit_date": "2022-12-27",
+     "avg_entry": 1441.26,
+     "avg_exit": 1359.88,
+     "pnl": -2838.35,
+     "ret": -0.057922134104880375,
+     "hold_days": 19,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.1,
+       "dma50_gap_pct": 5.69,
+       "volume_ratio": 1.09,
+       "vol_ratio": 0.85,
+       "gap_pct": 0.0
+      },
+      "as_of": "2022-12-07",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -5.79
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 65.0,
+     "entry_date": "2022-12-28",
+     "exit_date": "2023-01-12",
+     "avg_entry": 768.28,
+     "avg_exit": 757.06,
+     "pnl": -803.66,
+     "ret": -0.016093097568594818,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.34,
+       "dma50_gap_pct": 3.78,
+       "volume_ratio": 0.63,
+       "vol_ratio": 0.53,
+       "gap_pct": -0.49
+      },
+      "as_of": "2022-12-27",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.61
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 22.0,
+     "entry_date": "2023-01-19",
+     "exit_date": "2023-03-13",
+     "avg_entry": 2175.27,
+     "avg_exit": 2053.98,
+     "pnl": -2738.16,
+     "ret": -0.05721677653808491,
+     "hold_days": 53,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.88,
+       "dma50_gap_pct": 7.91,
+       "volume_ratio": 2.39,
+       "vol_ratio": 0.9,
+       "gap_pct": -0.29
+      },
+      "as_of": "2023-01-18",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -5.72
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 167.0,
+     "entry_date": "2023-02-02",
+     "exit_date": "2023-02-03",
+     "avg_entry": 298.67,
+     "avg_exit": 314.4,
+     "pnl": 2550.12,
+     "ret": 0.051127322797736505,
+     "hold_days": 1,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.21,
+       "dma50_gap_pct": 7.1,
+       "volume_ratio": 6.07,
+       "vol_ratio": 0.86,
+       "gap_pct": 0.06
+      },
+      "as_of": "2023-02-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.11
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 63.0,
+     "entry_date": "2023-02-07",
+     "exit_date": "2023-02-20",
+     "avg_entry": 785.46,
+     "avg_exit": 776.44,
+     "pnl": -642.06,
+     "ret": -0.012975103760853488,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.69,
+       "dma50_gap_pct": 1.75,
+       "volume_ratio": 0.7,
+       "vol_ratio": 0.93,
+       "gap_pct": 0.46
+      },
+      "as_of": "2023-02-06",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.3
+    },
+    {
+     "symbol": "TCS",
+     "ticker": "TCS.NS",
+     "direction": "long",
+     "qty": 15.0,
+     "entry_date": "2023-02-21",
+     "exit_date": "2023-03-13",
+     "avg_entry": 3136.38,
+     "avg_exit": 2946.03,
+     "pnl": -2923.68,
+     "ret": -0.062145469458420186,
+     "hold_days": 20,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.48,
+       "dma50_gap_pct": 4.72,
+       "volume_ratio": 0.82,
+       "vol_ratio": 0.75,
+       "gap_pct": 0.19
+      },
+      "as_of": "2023-02-20",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -6.21
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 153.0,
+     "entry_date": "2023-03-13",
+     "exit_date": "2023-03-27",
+     "avg_entry": 326.73,
+     "avg_exit": 319.18,
+     "pnl": -1229.27,
+     "ret": -0.024590433997490314,
+     "hold_days": 14,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.59,
+       "dma50_gap_pct": 8.92,
+       "volume_ratio": 0.75,
+       "vol_ratio": 0.91,
+       "gap_pct": 0.31
+      },
+      "as_of": "2023-03-10",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -2.46
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 23.0,
+     "entry_date": "2023-04-21",
+     "exit_date": "2023-05-08",
+     "avg_entry": 2156.3,
+     "avg_exit": 2276.87,
+     "pnl": 2696.64,
+     "ret": 0.054373288735333536,
+     "hold_days": 17,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.77,
+       "dma50_gap_pct": 2.17,
+       "volume_ratio": 0.88,
+       "vol_ratio": 0.93,
+       "gap_pct": 0.33
+      },
+      "as_of": "2023-04-20",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.44
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 141.0,
+     "entry_date": "2023-05-15",
+     "exit_date": "2023-05-29",
+     "avg_entry": 352.59,
+     "avg_exit": 377.02,
+     "pnl": 3367.47,
+     "ret": 0.06773530871550529,
+     "hold_days": 14,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.29,
+       "dma50_gap_pct": 6.22,
+       "volume_ratio": 1.14,
+       "vol_ratio": 0.79,
+       "gap_pct": -0.11
+      },
+      "as_of": "2023-05-12",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 6.77
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 64.0,
+     "entry_date": "2023-05-24",
+     "exit_date": "2023-06-06",
+     "avg_entry": 778.41,
+     "avg_exit": 804.15,
+     "pnl": 1571.4,
+     "ret": 0.03154260608162795,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.1,
+       "dma50_gap_pct": 3.39,
+       "volume_ratio": 1.31,
+       "vol_ratio": 0.75,
+       "gap_pct": 0.37
+      },
+      "as_of": "2023-05-23",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.15
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 61.0,
+     "entry_date": "2023-06-19",
+     "exit_date": "2023-07-04",
+     "avg_entry": 814.38,
+     "avg_exit": 838.77,
+     "pnl": 1412.16,
+     "ret": 0.028426701908200083,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.3,
+       "dma50_gap_pct": 4.83,
+       "volume_ratio": 0.65,
+       "vol_ratio": 1.07,
+       "gap_pct": 0.26
+      },
+      "as_of": "2023-06-16",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.84
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 122.0,
+     "entry_date": "2023-07-06",
+     "exit_date": "2023-07-20",
+     "avg_entry": 409.74,
+     "avg_exit": 422.44,
+     "pnl": 1473.26,
+     "ret": 0.029472018841216356,
+     "hold_days": 14,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.63,
+       "dma50_gap_pct": 9.65,
+       "volume_ratio": 2.05,
+       "vol_ratio": 0.85,
+       "gap_pct": 0.47
+      },
+      "as_of": "2023-07-05",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.95
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 37.0,
+     "entry_date": "2023-07-20",
+     "exit_date": "2023-09-08",
+     "avg_entry": 1338.27,
+     "avg_exit": 1336.99,
+     "pnl": -121.6,
+     "ret": -0.0024557413675864908,
+     "hold_days": 50,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 9.66,
+       "dma50_gap_pct": 13.04,
+       "volume_ratio": 1.85,
+       "vol_ratio": 1.07,
+       "gap_pct": -0.27
+      },
+      "as_of": "2023-07-19",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -0.25
+    },
+    {
+     "symbol": "TCS",
+     "ticker": "TCS.NS",
+     "direction": "long",
+     "qty": 16.0,
+     "entry_date": "2023-08-18",
+     "exit_date": "2023-08-31",
+     "avg_entry": 3091.76,
+     "avg_exit": 3043.53,
+     "pnl": -845.3,
+     "ret": -0.017087829424017393,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.2,
+       "dma50_gap_pct": 3.02,
+       "volume_ratio": 0.98,
+       "vol_ratio": 0.87,
+       "gap_pct": -0.75
+      },
+      "as_of": "2023-08-17",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.71
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 52.0,
+     "entry_date": "2023-09-04",
+     "exit_date": "2023-09-14",
+     "avg_entry": 945.11,
+     "avg_exit": 963.65,
+     "pnl": 889.64,
+     "ret": 0.018102051613039592,
+     "hold_days": 10,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.65,
+       "dma50_gap_pct": 1.06,
+       "volume_ratio": 0.84,
+       "vol_ratio": 0.66,
+       "gap_pct": 0.0
+      },
+      "as_of": "2023-09-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 1.81
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 17.0,
+     "entry_date": "2023-09-11",
+     "exit_date": "2023-09-28",
+     "avg_entry": 2828.09,
+     "avg_exit": 2930.31,
+     "pnl": 1664.32,
+     "ret": 0.034617427309597576,
+     "hold_days": 17,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.23,
+       "dma50_gap_pct": 11.64,
+       "volume_ratio": 2.1,
+       "vol_ratio": 1.12,
+       "gap_pct": 0.12
+      },
+      "as_of": "2023-09-08",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.46
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 55.0,
+     "entry_date": "2023-10-09",
+     "exit_date": "2023-10-20",
+     "avg_entry": 894.09,
+     "avg_exit": 920.58,
+     "pnl": 1382.09,
+     "ret": 0.028105668892393392,
+     "hold_days": 11,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.38,
+       "dma50_gap_pct": 4.19,
+       "volume_ratio": 0.45,
+       "vol_ratio": 0.96,
+       "gap_pct": -0.87
+      },
+      "as_of": "2023-10-06",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.81
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 54.0,
+     "entry_date": "2023-11-20",
+     "exit_date": "2023-12-07",
+     "avg_entry": 924.28,
+     "avg_exit": 973.96,
+     "pnl": 2605.84,
+     "ret": 0.05220963344441097,
+     "hold_days": 17,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.63,
+       "dma50_gap_pct": 2.43,
+       "volume_ratio": 0.83,
+       "vol_ratio": 0.92,
+       "gap_pct": 0.18
+      },
+      "as_of": "2023-11-17",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.22
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 15.0,
+     "entry_date": "2023-12-05",
+     "exit_date": "2023-12-14",
+     "avg_entry": 3231.17,
+     "avg_exit": 3342.2,
+     "pnl": 1591.5,
+     "ret": 0.032836394402027666,
+     "hold_days": 9,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 8.16,
+       "dma50_gap_pct": 9.66,
+       "volume_ratio": 2.2,
+       "vol_ratio": 1.04,
+       "gap_pct": 0.17
+      },
+      "as_of": "2023-12-04",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.28
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 88.0,
+     "entry_date": "2023-12-05",
+     "exit_date": "2023-12-08",
+     "avg_entry": 563.56,
+     "avg_exit": 581.65,
+     "pnl": 1516.34,
+     "ret": 0.03057543562353615,
+     "hold_days": 3,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 3.85,
+       "dma50_gap_pct": 3.05,
+       "volume_ratio": 1.98,
+       "vol_ratio": 1.02,
+       "gap_pct": 0.06
+      },
+      "as_of": "2023-12-04",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.06
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 35.0,
+     "entry_date": "2024-01-03",
+     "exit_date": "2024-01-16",
+     "avg_entry": 1400.7,
+     "avg_exit": 1503.54,
+     "pnl": 3523.16,
+     "ret": 0.07186536731634177,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.82,
+       "dma50_gap_pct": 5.49,
+       "volume_ratio": 0.83,
+       "vol_ratio": 1.23,
+       "gap_pct": -0.94
+      },
+      "as_of": "2024-01-02",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 7.19
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 43.0,
+     "entry_date": "2024-01-25",
+     "exit_date": "2024-03-18",
+     "avg_entry": 1155.11,
+     "avg_exit": 1193.39,
+     "pnl": 1570.3,
+     "ret": 0.0316148462051235,
+     "hold_days": 53,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 11.14,
+       "dma50_gap_pct": 16.68,
+       "volume_ratio": 1.83,
+       "vol_ratio": 1.34,
+       "gap_pct": -0.33
+      },
+      "as_of": "2024-01-24",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.16
+    },
+    {
+     "symbol": "RELIANCE",
+     "ticker": "RELIANCE.NS",
+     "direction": "long",
+     "qty": 34.0,
+     "entry_date": "2024-02-05",
+     "exit_date": "2024-03-04",
+     "avg_entry": 1443.34,
+     "avg_exit": 1489.44,
+     "pnl": 1492.61,
+     "ret": 0.03041585142793807,
+     "hold_days": 28,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.79,
+       "dma50_gap_pct": 12.91,
+       "volume_ratio": 1.51,
+       "vol_ratio": 1.78,
+       "gap_pct": 0.21
+      },
+      "as_of": "2024-02-02",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.04
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "direction": "long",
+     "qty": 175.0,
+     "entry_date": "2024-02-06",
+     "exit_date": "2024-02-22",
+     "avg_entry": 284.59,
+     "avg_exit": 301.67,
+     "pnl": 2912.05,
+     "ret": 0.0584711514810782,
+     "hold_days": 16,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "gap_down"
+      },
+      "metrics": {
+       "dma20_gap_pct": 16.25,
+       "dma50_gap_pct": 20.14,
+       "volume_ratio": 8.34,
+       "vol_ratio": 1.5,
+       "gap_pct": -1.18
+      },
+      "as_of": "2024-02-05",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.85
+    },
+    {
+     "symbol": "TCS",
+     "ticker": "TCS.NS",
+     "direction": "long",
+     "qty": 13.0,
+     "entry_date": "2024-02-07",
+     "exit_date": "2024-04-01",
+     "avg_entry": 3801.46,
+     "avg_exit": 3585.21,
+     "pnl": -2883.27,
+     "ret": -0.05834337399315,
+     "hold_days": 54,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.69,
+       "dma50_gap_pct": 11.01,
+       "volume_ratio": 1.9,
+       "vol_ratio": 1.36,
+       "gap_pct": 0.41
+      },
+      "as_of": "2024-02-06",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -5.83
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 75.0,
+     "entry_date": "2024-02-09",
+     "exit_date": "2024-02-14",
+     "avg_entry": 666.41,
+     "avg_exit": 704.06,
+     "pnl": 2746.66,
+     "ret": 0.05495437868579399,
+     "hold_days": 5,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 9.94,
+       "dma50_gap_pct": 11.34,
+       "volume_ratio": 3.56,
+       "vol_ratio": 1.39,
+       "gap_pct": 0.59
+      },
+      "as_of": "2024-02-08",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.5
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 50.0,
+     "entry_date": "2024-02-16",
+     "exit_date": "2024-03-01",
+     "avg_entry": 998.28,
+     "avg_exit": 1060.43,
+     "pnl": 3030.3,
+     "ret": 0.060710389369716,
+     "hold_days": 14,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.44,
+       "dma50_gap_pct": 0.97,
+       "volume_ratio": 0.49,
+       "vol_ratio": 1.67,
+       "gap_pct": 0.64
+      },
+      "as_of": "2024-02-15",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 6.07
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "direction": "long",
+     "qty": 152.0,
+     "entry_date": "2024-02-27",
+     "exit_date": "2024-03-11",
+     "avg_entry": 328.02,
+     "avg_exit": 354.27,
+     "pnl": 3912.22,
+     "ret": 0.07846558898847633,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 18.34,
+       "dma50_gap_pct": 28.4,
+       "volume_ratio": 1.87,
+       "vol_ratio": 1.7,
+       "gap_pct": 0.46
+      },
+      "as_of": "2024-02-26",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 7.85
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 13.0,
+     "entry_date": "2024-03-04",
+     "exit_date": "2024-04-01",
+     "avg_entry": 3572.83,
+     "avg_exit": 3736.38,
+     "pnl": 2054.89,
+     "ret": 0.044241705454779595,
+     "hold_days": 28,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "gap_up"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.28,
+       "dma50_gap_pct": 4.74,
+       "volume_ratio": 1.66,
+       "vol_ratio": 1.3,
+       "gap_pct": 1.0
+      },
+      "as_of": "2024-03-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 4.42
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "direction": "long",
+     "qty": 138.0,
+     "entry_date": "2024-03-13",
+     "exit_date": "2024-04-18",
+     "avg_entry": 362.29,
+     "avg_exit": 376.93,
+     "pnl": 1943.81,
+     "ret": 0.038879309393027646,
+     "hold_days": 36,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 17.13,
+       "dma50_gap_pct": 32.27,
+       "volume_ratio": 1.85,
+       "vol_ratio": 1.2,
+       "gap_pct": 0.51
+      },
+      "as_of": "2024-03-12",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.89
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 41.0,
+     "entry_date": "2024-04-04",
+     "exit_date": "2024-04-19",
+     "avg_entry": 1199.86,
+     "avg_exit": 1255.43,
+     "pnl": 2202.87,
+     "ret": 0.044779001300151826,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.55,
+       "dma50_gap_pct": 5.31,
+       "volume_ratio": 1.35,
+       "vol_ratio": 1.3,
+       "gap_pct": 0.51
+      },
+      "as_of": "2024-04-03",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 4.48
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 67.0,
+     "entry_date": "2024-04-05",
+     "exit_date": "2024-05-30",
+     "avg_entry": 736.82,
+     "avg_exit": 735.16,
+     "pnl": -185.19,
+     "ret": -0.0037512350370512222,
+     "hold_days": 55,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.08,
+       "dma50_gap_pct": 6.18,
+       "volume_ratio": 1.77,
+       "vol_ratio": 0.91,
+       "gap_pct": 0.75
+      },
+      "as_of": "2024-04-04",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -0.38
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 37.0,
+     "entry_date": "2024-04-24",
+     "exit_date": "2024-06-07",
+     "avg_entry": 1316.79,
+     "avg_exit": 1388.13,
+     "pnl": 2564.52,
+     "ret": 0.0526365707516006,
+     "hold_days": 44,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 8.81,
+       "dma50_gap_pct": 13.12,
+       "volume_ratio": 1.56,
+       "vol_ratio": 1.37,
+       "gap_pct": 0.72
+      },
+      "as_of": "2024-04-23",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 5.26
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 46.0,
+     "entry_date": "2024-04-24",
+     "exit_date": "2024-05-13",
+     "avg_entry": 1065.65,
+     "avg_exit": 1100.53,
+     "pnl": 1529.75,
+     "ret": 0.03120664852437468,
+     "hold_days": 19,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.46,
+       "dma50_gap_pct": 2.1,
+       "volume_ratio": 0.66,
+       "vol_ratio": 1.08,
+       "gap_pct": 0.18
+      },
+      "as_of": "2024-04-23",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.12
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 64.0,
+     "entry_date": "2024-04-26",
+     "exit_date": "2024-05-23",
+     "avg_entry": 772.72,
+     "avg_exit": 801.28,
+     "pnl": 1752.29,
+     "ret": 0.03543262760120088,
+     "hold_days": 27,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.56,
+       "dma50_gap_pct": 7.48,
+       "volume_ratio": 2.56,
+       "vol_ratio": 1.24,
+       "gap_pct": 0.39
+      },
+      "as_of": "2024-04-25",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.54
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 131.0,
+     "entry_date": "2024-05-22",
+     "exit_date": "2024-06-10",
+     "avg_entry": 381.13,
+     "avg_exit": 387.76,
+     "pnl": 792.99,
+     "ret": 0.015882592553721816,
+     "hold_days": 19,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.22,
+       "dma50_gap_pct": 2.01,
+       "volume_ratio": 0.72,
+       "vol_ratio": 1.06,
+       "gap_pct": 0.59
+      },
+      "as_of": "2024-05-21",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 1.59
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 45.0,
+     "entry_date": "2024-06-10",
+     "exit_date": "2024-07-01",
+     "avg_entry": 1088.82,
+     "avg_exit": 1182.34,
+     "pnl": 4131.75,
+     "ret": 0.08432672985433773,
+     "hold_days": 21,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.08,
+       "dma50_gap_pct": 1.11,
+       "volume_ratio": 1.03,
+       "vol_ratio": 1.9,
+       "gap_pct": -0.51
+      },
+      "as_of": "2024-06-07",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 8.43
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 34.0,
+     "entry_date": "2024-06-10",
+     "exit_date": "2024-06-27",
+     "avg_entry": 1433.75,
+     "avg_exit": 1478.92,
+     "pnl": 1461.51,
+     "ret": 0.02998116652136012,
+     "hold_days": 17,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.7,
+       "dma50_gap_pct": 7.54,
+       "volume_ratio": 2.62,
+       "vol_ratio": 1.06,
+       "gap_pct": -0.54
+      },
+      "as_of": "2024-06-07",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.0
+    },
+    {
+     "symbol": "TCS",
+     "ticker": "TCS.NS",
+     "direction": "long",
+     "qty": 13.0,
+     "entry_date": "2024-06-10",
+     "exit_date": "2024-07-02",
+     "avg_entry": 3591.21,
+     "avg_exit": 3704.07,
+     "pnl": 1396.05,
+     "ret": 0.02990316355768672,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.9,
+       "dma50_gap_pct": 1.03,
+       "volume_ratio": 1.81,
+       "vol_ratio": 1.03,
+       "gap_pct": 0.03
+      },
+      "as_of": "2024-06-07",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.99
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 61.0,
+     "entry_date": "2024-06-19",
+     "exit_date": "2024-07-05",
+     "avg_entry": 815.43,
+     "avg_exit": 827.9,
+     "pnl": 685.49,
+     "ret": 0.013781075628809375,
+     "hold_days": 16,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.84,
+       "dma50_gap_pct": 5.74,
+       "volume_ratio": 0.54,
+       "vol_ratio": 2.35,
+       "gap_pct": 0.22
+      },
+      "as_of": "2024-06-18",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 1.38
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 60.0,
+     "entry_date": "2024-06-26",
+     "exit_date": "2024-07-03",
+     "avg_entry": 828.88,
+     "avg_exit": 858.33,
+     "pnl": 1691.08,
+     "ret": 0.034003224230286705,
+     "hold_days": 7,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 8.01,
+       "dma50_gap_pct": 12.34,
+       "volume_ratio": 1.63,
+       "vol_ratio": 1.55,
+       "gap_pct": -0.2
+      },
+      "as_of": "2024-06-25",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.4
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 33.0,
+     "entry_date": "2024-06-28",
+     "exit_date": "2024-08-20",
+     "avg_entry": 1496.24,
+     "avg_exit": 1419.27,
+     "pnl": -2612.17,
+     "ret": -0.05290370027535692,
+     "hold_days": 53,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "gap_up"
+      },
+      "metrics": {
+       "dma20_gap_pct": 4.99,
+       "dma50_gap_pct": 9.19,
+       "volume_ratio": 1.82,
+       "vol_ratio": 1.77,
+       "gap_pct": 4.1
+      },
+      "as_of": "2024-06-27",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -5.29
+    },
+    {
+     "symbol": "RELIANCE",
+     "ticker": "RELIANCE.NS",
+     "direction": "long",
+     "qty": 32.0,
+     "entry_date": "2024-07-01",
+     "exit_date": "2024-08-21",
+     "avg_entry": 1543.91,
+     "avg_exit": 1485.84,
+     "pnl": -1930.95,
+     "ret": -0.03908408683148639,
+     "hold_days": 51,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.61,
+       "dma50_gap_pct": 7.67,
+       "volume_ratio": 1.73,
+       "vol_ratio": 1.9,
+       "gap_pct": -0.18
+      },
+      "as_of": "2024-06-28",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -3.91
+    },
+    {
+     "symbol": "TCS",
+     "ticker": "TCS.NS",
+     "direction": "long",
+     "qty": 13.0,
+     "entry_date": "2024-07-11",
+     "exit_date": "2024-08-02",
+     "avg_entry": 3624.41,
+     "avg_exit": 3958.17,
+     "pnl": 4264.95,
+     "ret": 0.090517647010134,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.25,
+       "dma50_gap_pct": 1.2,
+       "volume_ratio": 1.21,
+       "vol_ratio": 0.85,
+       "gap_pct": 0.56
+      },
+      "as_of": "2024-07-10",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 9.05
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 13.0,
+     "entry_date": "2024-07-19",
+     "exit_date": "2024-08-05",
+     "avg_entry": 3582.27,
+     "avg_exit": 3461.59,
+     "pnl": -1637.52,
+     "ret": -0.03516287019124753,
+     "hold_days": 17,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.43,
+       "dma50_gap_pct": 3.13,
+       "volume_ratio": 1.21,
+       "vol_ratio": 0.65,
+       "gap_pct": -0.14
+      },
+      "as_of": "2024-07-18",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -3.52
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 29.0,
+     "entry_date": "2024-07-22",
+     "exit_date": "2024-07-26",
+     "avg_entry": 1692.11,
+     "avg_exit": 1766.13,
+     "pnl": 2071.36,
+     "ret": 0.04221139287634978,
+     "hold_days": 4,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 9.54,
+       "dma50_gap_pct": 17.94,
+       "volume_ratio": 3.41,
+       "vol_ratio": 0.75,
+       "gap_pct": 0.4
+      },
+      "as_of": "2024-07-19",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 4.22
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 113.0,
+     "entry_date": "2024-07-24",
+     "exit_date": "2024-09-05",
+     "avg_entry": 440.21,
+     "avg_exit": 453.7,
+     "pnl": 1448.61,
+     "ret": 0.02912148179278074,
+     "hold_days": 43,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 10.1,
+       "dma50_gap_pct": 13.24,
+       "volume_ratio": 3.29,
+       "vol_ratio": 1.21,
+       "gap_pct": 0.77
+      },
+      "as_of": "2024-07-23",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 2.91
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 63.0,
+     "entry_date": "2024-08-02",
+     "exit_date": "2024-08-14",
+     "avg_entry": 791.53,
+     "avg_exit": 780.27,
+     "pnl": -783.65,
+     "ret": -0.015714944474625084,
+     "hold_days": 12,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.67,
+       "dma50_gap_pct": 1.75,
+       "volume_ratio": 0.53,
+       "vol_ratio": 1.04,
+       "gap_pct": -0.48
+      },
+      "as_of": "2024-08-01",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.57
+    },
+    {
+     "symbol": "JIOFIN",
+     "ticker": "JIOFIN.NS",
+     "direction": "long",
+     "qty": 145.0,
+     "entry_date": "2024-09-04",
+     "exit_date": "2024-09-27",
+     "avg_entry": 343.66,
+     "avg_exit": 357.75,
+     "pnl": 1966.77,
+     "ret": 0.03946907553977761,
+     "hold_days": 23,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "gap_down"
+      },
+      "metrics": {
+       "dma20_gap_pct": 6.79,
+       "dma50_gap_pct": 3.91,
+       "volume_ratio": 3.47,
+       "vol_ratio": 1.01,
+       "gap_pct": -1.48
+      },
+      "as_of": "2024-09-03",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.95
+    },
+    {
+     "symbol": "BHARTIARTL",
+     "ticker": "BHARTIARTL.NS",
+     "direction": "long",
+     "qty": 33.0,
+     "entry_date": "2024-09-10",
+     "exit_date": "2024-09-25",
+     "avg_entry": 1513.29,
+     "avg_exit": 1724.11,
+     "pnl": 6876.93,
+     "ret": 0.13770787489509606,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "dry",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.76,
+       "dma50_gap_pct": 4.53,
+       "volume_ratio": 0.54,
+       "vol_ratio": 0.74,
+       "gap_pct": 0.16
+      },
+      "as_of": "2024-09-09",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 13.77
+    },
+    {
+     "symbol": "ITC",
+     "ticker": "ITC.NS",
+     "direction": "long",
+     "qty": 110.0,
+     "entry_date": "2024-09-10",
+     "exit_date": "2024-10-01",
+     "avg_entry": 454.32,
+     "avg_exit": 458.14,
+     "pnl": 344.92,
+     "ret": 0.006901864324705039,
+     "hold_days": 21,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.77,
+       "dma50_gap_pct": 6.04,
+       "volume_ratio": 1.32,
+       "vol_ratio": 0.95,
+       "gap_pct": 0.03
+      },
+      "as_of": "2024-09-09",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 0.69
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 38.0,
+     "entry_date": "2024-09-23",
+     "exit_date": "2024-11-12",
+     "avg_entry": 1309.77,
+     "avg_exit": 1250.33,
+     "pnl": -2331.68,
+     "ret": -0.04684797712575494,
+     "hold_days": 50,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.36,
+       "dma50_gap_pct": 10.14,
+       "volume_ratio": 5.72,
+       "vol_ratio": 0.95,
+       "gap_pct": -0.56
+      },
+      "as_of": "2024-09-20",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -4.68
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 27.0,
+     "entry_date": "2024-10-10",
+     "exit_date": "2024-10-28",
+     "avg_entry": 1840.39,
+     "avg_exit": 1753.39,
+     "pnl": -2421.77,
+     "ret": -0.048737134520400564,
+     "hold_days": 18,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.91,
+       "dma50_gap_pct": 3.6,
+       "volume_ratio": 0.7,
+       "vol_ratio": 0.79,
+       "gap_pct": 0.26
+      },
+      "as_of": "2024-10-09",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -4.87
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 61.0,
+     "entry_date": "2024-11-29",
+     "exit_date": "2024-12-18",
+     "avg_entry": 809.94,
+     "avg_exit": 807.1,
+     "pnl": -247.22,
+     "ret": -0.0050038027508210875,
+     "hold_days": 19,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.32,
+       "dma50_gap_pct": 3.66,
+       "volume_ratio": 0.85,
+       "vol_ratio": 1.02,
+       "gap_pct": 0.27
+      },
+      "as_of": "2024-11-28",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -0.5
+    },
+    {
+     "symbol": "LT",
+     "ticker": "LT.NS",
+     "direction": "long",
+     "qty": 12.0,
+     "entry_date": "2024-12-10",
+     "exit_date": "2025-01-29",
+     "avg_entry": 3880.55,
+     "avg_exit": 3384.76,
+     "pnl": -6014.87,
+     "ret": -0.12916699501359352,
+     "hold_days": 50,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 7.32,
+       "dma50_gap_pct": 9.82,
+       "volume_ratio": 1.76,
+       "vol_ratio": 0.89,
+       "gap_pct": 0.2
+      },
+      "as_of": "2024-12-09",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -12.92
+    },
+    {
+     "symbol": "ICICIBANK",
+     "ticker": "ICICIBANK.NS",
+     "direction": "long",
+     "qty": 38.0,
+     "entry_date": "2024-12-18",
+     "exit_date": "2025-01-07",
+     "avg_entry": 1304.11,
+     "avg_exit": 1258.84,
+     "pnl": -1793.3,
+     "ret": -0.03618729440001226,
+     "hold_days": 20,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "calm",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 1.82,
+       "dma50_gap_pct": 3.99,
+       "volume_ratio": 0.82,
+       "vol_ratio": 0.68,
+       "gap_pct": -0.64
+      },
+      "as_of": "2024-12-17",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -3.62
+    },
+    {
+     "symbol": "INFY",
+     "ticker": "INFY.NS",
+     "direction": "long",
+     "qty": 26.0,
+     "entry_date": "2024-12-20",
+     "exit_date": "2025-01-02",
+     "avg_entry": 1877.74,
+     "avg_exit": 1861.3,
+     "pnl": -500.35,
+     "ret": -0.010248639321737984,
+     "hold_days": 13,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "near",
+       "volume": "normal",
+       "volatility": "normal",
+       "gap": "gap_up"
+      },
+      "metrics": {
+       "dma20_gap_pct": 0.87,
+       "dma50_gap_pct": 3.5,
+       "volume_ratio": 0.94,
+       "vol_ratio": 1.02,
+       "gap_pct": 1.49
+      },
+      "as_of": "2024-12-19",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": -1.02
+    },
+    {
+     "symbol": "HDFCBANK",
+     "ticker": "HDFCBANK.NS",
+     "direction": "long",
+     "qty": 56.0,
+     "entry_date": "2025-03-26",
+     "exit_date": "2025-04-17",
+     "avg_entry": 885.68,
+     "avg_exit": 925.33,
+     "pnl": 2144.34,
+     "ret": 0.04323428608526792,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.93,
+       "dma50_gap_pct": 7.17,
+       "volume_ratio": 1.81,
+       "vol_ratio": 0.8,
+       "gap_pct": 0.19
+      },
+      "as_of": "2025-03-25",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 4.32
+    },
+    {
+     "symbol": "SBIN",
+     "ticker": "SBIN.NS",
+     "direction": "long",
+     "qty": 67.0,
+     "entry_date": "2025-03-26",
+     "exit_date": "2025-04-17",
+     "avg_entry": 743.4,
+     "avg_exit": 767.91,
+     "pnl": 1566.23,
+     "ret": 0.03144540960451977,
+     "hold_days": 22,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "normal",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 5.99,
+       "dma50_gap_pct": 4.33,
+       "volume_ratio": 1.79,
+       "vol_ratio": 0.85,
+       "gap_pct": -0.11
+      },
+      "as_of": "2025-03-25",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.14
+    },
+    {
+     "symbol": "RELIANCE",
+     "ticker": "RELIANCE.NS",
+     "direction": "long",
+     "qty": 35.0,
+     "entry_date": "2025-04-30",
+     "exit_date": "2025-05-15",
+     "avg_entry": 1390.0,
+     "avg_exit": 1441.75,
+     "pnl": 1736.92,
+     "ret": 0.03570229316546763,
+     "hold_days": 15,
+     "n_fills": 2,
+     "context": {
+      "tags": {
+       "trend_dma": "above_both",
+       "extension": "stretched",
+       "volume": "spike",
+       "volatility": "stressed",
+       "gap": "flat_open"
+      },
+      "metrics": {
+       "dma20_gap_pct": 10.76,
+       "dma50_gap_pct": 12.49,
+       "volume_ratio": 2.3,
+       "vol_ratio": 1.38,
+       "gap_pct": 0.16
+      },
+      "as_of": "2025-04-29",
+      "entry_bar_found": true,
+      "complete": true
+     },
+     "ret_pct": 3.57
+    }
+   ]
+  },
+  "summary_keys": [
+   "source_used",
+   "overall",
+   "long",
+   "short",
+   "bad_patterns",
+   "good_patterns",
+   "patterns_tested",
+   "hold_behaviour",
+   "notes"
+  ]
+ },
+ "train_stats": {
+  "n": 77,
+  "total_pnl": 59405,
+  "win_rate": 0.675,
+  "chase_pnl": 31157,
+  "calm_pnl": 28248
+ },
+ "results": {
+  "ignore": {
+   "trades": 29,
+   "total_pnl": -4961,
+   "max_drawdown": -22958,
+   "win_rate": 0.552
+  },
+  "follow": {
+   "trades": 19,
+   "total_pnl": -8973,
+   "max_drawdown": -20369,
+   "win_rate": 0.526
+  },
+  "by_action": {
+   "proceed": {
+    "n": 14,
+    "total_pnl_if_taken": -8273,
+    "win_rate": 0.5
+   },
+   "reduce_size": {
+    "n": 5,
+    "total_pnl_if_taken": -1399,
+    "win_rate": 0.6
+   },
+   "wait": {
+    "n": 10,
+    "total_pnl_if_taken": 4711,
+    "win_rate": 0.6
+   }
+  },
+  "by_kind": {
+   "chase": {
+    "n": 14,
+    "total_pnl": -4033,
+    "win_rate": 0.643
+   },
+   "calm": {
+    "n": 15,
+    "total_pnl": -928,
+    "win_rate": 0.467
+   }
+  }
+ },
+ "patterns_shown": [
+  "When you bought with gap up at the open (1% or more): 5 trades, win rate 20% (your average is 68%), avg return -3.2%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+  "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof."
+ ],
+ "rows": [
+  {
+   "sym": "JIOFIN",
+   "kind": "chase",
+   "date": "2025-06-10",
+   "exit": "2025-06-27",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 2806.243176951126,
+   "ret": 0.05771744351320063,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 70% vs 68% across all your long trades, avg return +0.8%, avg PnL +455.",
+   "n_similar": 10
+  },
+  {
+   "sym": "TCS",
+   "kind": "calm",
+   "date": "2025-06-19",
+   "exit": "2025-07-02",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": -454.80956022958026,
+   "ret": -0.007739123026205275,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return +0.3%, avg PnL +156.",
+   "n_similar": 10
+  },
+  {
+   "sym": "BHARTIARTL",
+   "kind": "calm",
+   "date": "2025-06-19",
+   "exit": "2025-07-08",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 4100.664287904375,
+   "ret": 0.08440171241683925,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 60% vs 68% across all your long trades, avg return +1.4%, avg PnL +722.",
+   "n_similar": 10
+  },
+  {
+   "sym": "RELIANCE",
+   "kind": "calm",
+   "date": "2025-06-25",
+   "exit": "2025-07-09",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 1778.5706472465881,
+   "ret": 0.03756824037694573,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 70% vs 68% across all your long trades, avg return +1.9%, avg PnL +952.",
+   "n_similar": 10
+  },
+  {
+   "sym": "HDFCBANK",
+   "kind": "calm",
+   "date": "2025-07-23",
+   "exit": "2025-08-08",
+   "action": "reduce_size",
+   "factor": 0.5,
+   "conf": "high",
+   "pnl": -863.0477356193353,
+   "ret": -0.016005893752211064,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return +1.0%, avg PnL +476.",
+   "n_similar": 10
+  },
+  {
+   "sym": "JIOFIN",
+   "kind": "chase",
+   "date": "2025-06-30",
+   "exit": "2025-08-19",
+   "action": "reduce_size",
+   "factor": 0.5,
+   "conf": "high",
+   "pnl": 674.0183620919652,
+   "ret": 0.01504003908284579,
+   "pattern": "When you bought with gap up at the open (1% or more): 5 trades, win rate 20% (your average is 68%), avg return -3.2%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return -1.4%, avg PnL -639.",
+   "n_similar": 10
+  },
+  {
+   "sym": "LT",
+   "kind": "calm",
+   "date": "2025-09-23",
+   "exit": "2025-10-06",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 1088.6774096852291,
+   "ret": 0.024705999059347894,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 40% vs 68% across all your long trades, avg return +0.8%, avg PnL +416.",
+   "n_similar": 10
+  },
+  {
+   "sym": "RELIANCE",
+   "kind": "chase",
+   "date": "2025-10-21",
+   "exit": "2025-11-14",
+   "action": "reduce_size",
+   "factor": 0.5,
+   "conf": "high",
+   "pnl": 1646.8190244147136,
+   "ret": 0.03467300784828464,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 60% vs 68% across all your long trades, avg return -0.1%, avg PnL +3.",
+   "n_similar": 10
+  },
+  {
+   "sym": "LT",
+   "kind": "calm",
+   "date": "2025-11-11",
+   "exit": "2025-11-26",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 1509.3397726728472,
+   "ret": 0.033850875495343935,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return +0.1%, avg PnL +59.",
+   "n_similar": 10
+  },
+  {
+   "sym": "SBIN",
+   "kind": "calm",
+   "date": "2025-11-28",
+   "exit": "2025-12-10",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": -945.0873076723997,
+   "ret": -0.017454898720144385,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return -0.3%, avg PnL -106.",
+   "n_similar": 10
+  },
+  {
+   "sym": "HDFCBANK",
+   "kind": "calm",
+   "date": "2025-12-24",
+   "exit": "2026-01-14",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": -3461.182889243524,
+   "ret": -0.06802614859715728,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 40% vs 68% across all your long trades, avg return -0.6%, avg PnL -291.",
+   "n_similar": 10
+  },
+  {
+   "sym": "LT",
+   "kind": "calm",
+   "date": "2025-12-29",
+   "exit": "2026-01-16",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": -2406.8762032645773,
+   "ret": -0.04850728804908955,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 40% vs 68% across all your long trades, avg return +0.8%, avg PnL +416.",
+   "n_similar": 10
+  },
+  {
+   "sym": "INFY",
+   "kind": "calm",
+   "date": "2026-01-02",
+   "exit": "2026-01-22",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 762.3912652727342,
+   "ret": 0.01687144638036031,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 40% vs 68% across all your long trades, avg return +0.8%, avg PnL +416.",
+   "n_similar": 10
+  },
+  {
+   "sym": "SBIN",
+   "kind": "chase",
+   "date": "2026-02-11",
+   "exit": "2026-02-12",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 1985.882942057744,
+   "ret": 0.04167036649668021,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.5%, avg PnL +1,253.",
+   "n_similar": 10
+  },
+  {
+   "sym": "SBIN",
+   "kind": "chase",
+   "date": "2026-02-13",
+   "exit": "2026-02-23",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 1525.9640138602072,
+   "ret": 0.032632439995806894,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.5%, avg PnL +1,253.",
+   "n_similar": 10
+  },
+  {
+   "sym": "ICICIBANK",
+   "kind": "chase",
+   "date": "2026-01-09",
+   "exit": "2026-03-02",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -1915.876677152744,
+   "ret": -0.037208317580862404,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 70% vs 68% across all your long trades, avg return +0.6%, avg PnL +336.",
+   "n_similar": 10
+  },
+  {
+   "sym": "ITC",
+   "kind": "calm",
+   "date": "2026-05-20",
+   "exit": "2026-06-03",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -4023.580167183405,
+   "ret": -0.07913789507033409,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 60% vs 68% across all your long trades, avg return +1.8%, avg PnL +891.",
+   "n_similar": 10
+  },
+  {
+   "sym": "ICICIBANK",
+   "kind": "chase",
+   "date": "2026-04-15",
+   "exit": "2026-06-05",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -3590.735774392706,
+   "ret": -0.07061855054913602,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.5%, avg PnL +1,253.",
+   "n_similar": 10
+  },
+  {
+   "sym": "LT",
+   "kind": "calm",
+   "date": "2026-06-04",
+   "exit": "2026-06-23",
+   "action": "wait",
+   "factor": 0.0,
+   "conf": "high",
+   "pnl": 2739.6792290038993,
+   "ret": 0.05941695876901143,
+   "pattern": "When you bought with price within 5% of its 20 DMA and calm volatility regime: 13 trades, win rate 46% (your average is 68%), avg return -0.1%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 50% vs 68% across all your long trades, avg return +0.1%, avg PnL +59.",
+   "n_similar": 10
+  },
+  {
+   "sym": "INFY",
+   "kind": "chase",
+   "date": "2026-06-03",
+   "exit": "2026-07-23",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -6973.621001789993,
+   "ret": -0.13850318932096017,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 90% vs 68% across all your long trades, avg return +3.7%, avg PnL +1,811.",
+   "n_similar": 10
+  },
+  {
+   "sym": "TCS",
+   "kind": "chase",
+   "date": "2026-06-03",
+   "exit": "2026-07-23",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -2935.2766083639203,
+   "ret": -0.057585638524537464,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.3%, avg PnL +1,131.",
+   "n_similar": 10
+  },
+  {
+   "sym": "INFY",
+   "kind": "chase",
+   "date": "2026-07-31",
+   "exit": "2026-08-03",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 2612.5352249755897,
+   "ret": 0.05460718049222835,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 60% vs 68% across all your long trades, avg return +0.6%, avg PnL +334.",
+   "n_similar": 10
+  },
+  {
+   "sym": "BHARTIARTL",
+   "kind": "calm",
+   "date": "2026-07-28",
+   "exit": "2026-08-17",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 1700.3304185790994,
+   "ret": 0.0359284843914387,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 60% vs 68% across all your long trades, avg return +1.6%, avg PnL +775.",
+   "n_similar": 10
+  },
+  {
+   "sym": "SBIN",
+   "kind": "calm",
+   "date": "2026-08-18",
+   "exit": "2026-09-04",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -2117.668423278812,
+   "ret": -0.041053228578969536,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 70% vs 68% across all your long trades, avg return +2.6%, avg PnL +1,279.",
+   "n_similar": 10
+  },
+  {
+   "sym": "RELIANCE",
+   "kind": "calm",
+   "date": "2026-08-24",
+   "exit": "2026-09-07",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": -335.57337100219706,
+   "ret": -0.0053926596670167415,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 70% vs 68% across all your long trades, avg return +3.1%, avg PnL +1,520.",
+   "n_similar": 10
+  },
+  {
+   "sym": "JIOFIN",
+   "kind": "chase",
+   "date": "2026-08-03",
+   "exit": "2026-09-22",
+   "action": "reduce_size",
+   "factor": 0.5,
+   "conf": "high",
+   "pnl": -5579.541157843891,
+   "ret": -0.11061436479859466,
+   "pattern": "When you bought with gap up at the open (1% or more): 5 trades, win rate 20% (your average is 68%), avg return -3.2%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.8%, avg PnL +1,353.",
+   "n_similar": 10
+  },
+  {
+   "sym": "TCS",
+   "kind": "chase",
+   "date": "2026-10-14",
+   "exit": "2026-10-15",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 1523.1719999999937,
+   "ret": 0.033421284080914715,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.5%, avg PnL +1,253.",
+   "n_similar": 10
+  },
+  {
+   "sym": "INFY",
+   "kind": "chase",
+   "date": "2026-10-15",
+   "exit": "2026-10-16",
+   "action": "reduce_size",
+   "factor": 0.5,
+   "conf": "high",
+   "pnl": 2722.716054382321,
+   "ret": 0.05659686184883994,
+   "pattern": "When you bought with gap up at the open (1% or more): 5 trades, win rate 20% (your average is 68%), avg return -3.2%. This is a repeat mistake pattern. Small sample: a hint, not proof.",
+   "reason": "Top 10 similar past long trades: win rate 40% vs 68% across all your long trades, avg return -1.8%, avg PnL -845.",
+   "n_similar": 10
+  },
+  {
+   "sym": "TCS",
+   "kind": "chase",
+   "date": "2026-10-19",
+   "exit": "2026-10-26",
+   "action": "proceed",
+   "factor": 1.0,
+   "conf": "high",
+   "pnl": 1465.1050000000032,
+   "ret": 0.03132628152969885,
+   "pattern": null,
+   "reason": "Top 10 similar past long trades: win rate 80% vs 68% across all your long trades, avg return +2.5%, avg PnL +1,253.",
+   "n_similar": 10
+  }
+ ]
+}

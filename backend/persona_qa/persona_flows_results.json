@@ -1,0 +1,868 @@
+{
+ "A_beginner": {
+  "persona": "Beginner Bina (vague idea, first backtest)",
+  "steps": [
+   {
+    "step": "parse",
+    "text": "I want to buy Reliance when it is going up a lot and sell when I make some profit or if I am losing too much",
+    "strategy": null,
+    "confidence": 0.0,
+    "assumptions": [],
+    "unsupported": [
+     "No supported entry rule found. Rex understands: N-day-high breakout, moving-average crossover, RSI oversold/overbought, mean-reversion z-score. Nothing was guessed. Try wording like: \"Buy RELIANCE when it breaks above the 20 day high, hold 10 days, 5% stop loss, 10% profit target\"."
+    ]
+   },
+   {
+    "step": "parse",
+    "text": "Buy Reliance when it breaks above the 20 day high, hold 10 days, 5% stop loss, 10% profit target",
+    "strategy": {
+     "ticker": "RELIANCE.NS",
+     "template": "breakout",
+     "params": {
+      "n": 20
+     },
+     "exits": {
+      "hold_days": 10,
+      "stop_pct": 5.0,
+      "tp_pct": 10.0
+     }
+    },
+    "confidence": 0.92,
+    "assumptions": [],
+    "unsupported": []
+   },
+   {
+    "step": "pre_run_memory",
+    "warnings": [
+     "You already ran this exact setup on RELIANCE.NS (01 Nov): train -12.3%, locked year -2.3%.",
+     "3 of 3 earlier refinements of breakout on RELIANCE.NS were flagged OVERFIT. Tuned parameters have not held up here before.",
+     "11 of 12 past breakout backtests lost money in their locked year; only 7 beat buy and hold.",
+     "Today's setup on RELIANCE.NS (trend=down, volume=normal, volatility=stressed, momentum=down) resembles 1 past breakout trades; win rate 0% vs 47% overall (no clear signal)."
+    ],
+    "keys": [
+     "ticker",
+     "template",
+     "warnings",
+     "current_setup",
+     "similar",
+     "memory_runs",
+     "recent_lessons"
+    ]
+   },
+   {
+    "step": "last_time_before_first_run",
+    "headline": "As of 30 Sep 2026 (replayed from real data) breakout on RELIANCE: LOST, test -0.5%; price then moved -1.9% in 20 days.",
+    "lesson": "It lost money on the locked year. Change the rule or the stock before trusting it.",
+    "replayed": true,
+    "total": 26
+   },
+   {
+    "step": "backtest",
+    "spec": {
+     "ticker": "RELIANCE.NS",
+     "template": "breakout",
+     "params": {
+      "n": 20
+     },
+     "exits": {
+      "hold_days": 10,
+      "stop_pct": 5.0,
+      "tp_pct": 10.0
+     },
+     "cost_bps": 15.0
+    },
+    "train": {
+     "trades": 25,
+     "ret": -12.31,
+     "mdd": -18.08,
+     "win": 36.0,
+     "sharpe": -0.28
+    },
+    "locked": {
+     "trades": 2,
+     "ret": -2.26,
+     "mdd": -8.61,
+     "win": 50.0,
+     "sharpe": -0.35
+    },
+    "bh_locked": -21.38,
+    "bh_train": 26.02
+   },
+   {
+    "step": "refine",
+    "flag": "overfit",
+    "headline": "Overfit warning: the refinement looked good in training but collapsed on the locked final year.",
+    "refined_params": {
+     "n": 16
+    },
+    "refined_exits": {
+     "hold_days": 15,
+     "stop_pct": 5.0,
+     "tp_pct": 5.0
+    },
+    "changed": true,
+    "original": {
+     "train": {
+      "trades": 25,
+      "ret": -12.31,
+      "mdd": -18.08,
+      "win": 36.0,
+      "sharpe": -0.28
+     },
+     "locked": {
+      "trades": 2,
+      "ret": -2.26,
+      "mdd": -8.61,
+      "win": 50.0,
+      "sharpe": -0.35
+     }
+    },
+    "refined": {
+     "train": {
+      "trades": 29,
+      "ret": 20.16,
+      "mdd": -21.02,
+      "win": 58.62,
+      "sharpe": 0.46
+     },
+     "locked": {
+      "trades": 3,
+      "ret": 0.65,
+      "mdd": -5.3,
+      "win": 66.67,
+      "sharpe": 0.14
+     }
+    },
+    "trials": 400,
+    "notes": [
+     "Refined Sharpe fell from 0.46 (train) to 0.14 (locked year): the tuned parameters did not hold up.",
+     "On the locked year the refined version returned +0.7% vs -2.3% for your original (small samples can flatter either version).",
+     "Best of 400 candidates tried on training data; picking the best of many looks better than it is (multiple testing)."
+    ]
+   },
+   {
+    "step": "persona_decision",
+    "follow_rex": true,
+    "uses": "original rules",
+    "params": {
+     "n": 20
+    },
+    "exits": {
+     "hold_days": 10,
+     "stop_pct": 5.0,
+     "tp_pct": 10.0
+    }
+   },
+   {
+    "step": "logged_trade_tracking",
+    "session": "5afe141739",
+    "mode": "logged",
+    "entry": 1195.0,
+    "qty": 10,
+    "live_price": 1164.9,
+    "market": "Closed (weekend)",
+    "net_pct": -2.67,
+    "pnl_abs": -318.92,
+    "dist_to_stop_pct": 2.55,
+    "dist_to_tp_pct": 12.84,
+    "exit_alert": false,
+    "exit_text": null
+   },
+   {
+    "step": "paper_tracking_no_trade",
+    "session": "966a47130b",
+    "phase": "watching",
+    "watching": "Entry condition is not met at the 2026-10-30 close. Rex is watching for it.",
+    "position": false
+   },
+   {
+    "step": "closed",
+    "status": "closed",
+    "verdict": "LOST",
+    "lesson": null,
+    "net_pct": -2.67,
+    "saved": {
+     "strategy_memory": {
+      "run_id": "trk_5afe141739",
+      "verdict": "LOST",
+      "headline": "On 1 Nov 2026 you took BUY RELIANCE (breakout) in your broker: LOST, -2.7% in 5d; not enough trading days have passed yet to see how price moved.",
+      "stored_in": "sqlite",
+      "meko_mirror": "off"
+     },
+     "journal": {
+      "added": false,
+      "reason": "you chose not to add it to your journal"
+     },
+     "lesson": "Price was up +0.8% at its best but you closed at -2.7%: consider the strategy's target or a trailing exit instead of waiting."
+    },
+    "exit_price": null
+   },
+   {
+    "step": "last_time_before_similar_backtest",
+    "headline": "On 1 Nov 2026 you took BUY RELIANCE (breakout) in your broker: LOST, -2.7% in 5d; not enough trading days have passed yet to see how price moved.",
+    "lesson": "Price was up +0.8% at its best but you closed at -2.7%: consider the strategy's target or a trailing exit instead of waiting.",
+    "match": "same ticker and strategy",
+    "kind": "tracked_trade",
+    "fwd5": null,
+    "fwd20": null,
+    "since_pct": null
+   },
+   {
+    "step": "similar_backtest",
+    "params": {
+     "n": 25
+    },
+    "locked": {
+     "trades": 2,
+     "ret": -2.26,
+     "mdd": -5.61,
+     "win": 50.0,
+     "sharpe": -0.45
+    },
+    "train": {
+     "trades": 24,
+     "ret": -10.92,
+     "mdd": -18.08,
+     "win": 33.33,
+     "sharpe": -0.25
+    }
+   },
+   {
+    "step": "out_of_sample_as_of",
+    "results": [
+     {
+      "cut": "2024-04-30",
+      "flag": "ok",
+      "changed": true,
+      "refined_params": {
+       "n": 12
+      },
+      "refined_exits": {
+       "hold_days": 20,
+       "stop_pct": 5.0,
+       "tp_pct": 5.0
+      },
+      "original": {
+       "ret": -10.85,
+       "mdd": -11.63,
+       "trades": 10
+      },
+      "refined": {
+       "ret": -16.57,
+       "mdd": -22.58,
+       "trades": 20
+      },
+      "follow_rex": {
+       "ret": -16.57,
+       "mdd": -22.58
+      },
+      "buy_hold": {
+       "ret": -19.64,
+       "mdd": -27.18
+      },
+      "forward_days": 620
+     },
+     {
+      "cut": "2025-04-30",
+      "flag": "overfit",
+      "changed": true,
+      "refined_params": {
+       "n": 25
+      },
+      "refined_exits": {
+       "hold_days": 20,
+       "stop_pct": 7.5,
+       "tp_pct": 7.5
+      },
+      "original": {
+       "ret": -0.44,
+       "mdd": -8.61,
+       "trades": 5
+      },
+      "refined": {
+       "ret": -10.08,
+       "mdd": -11.68,
+       "trades": 5
+      },
+      "follow_rex": {
+       "ret": -0.44,
+       "mdd": -8.61
+      },
+      "buy_hold": {
+       "ret": -16.37,
+       "mdd": -26.94
+      },
+      "forward_days": 373
+     }
+    ]
+   }
+  ]
+ },
+ "B_swing": {
+  "persona": "Swing trader Sameer (MA crossover, defined risk)",
+  "steps": [
+   {
+    "step": "parse",
+    "text": "Buy TCS when the 20 day average crosses above the 50 day average, 4% stop loss, 8% take profit, hold at most 15 days",
+    "strategy": {
+     "ticker": "TCS.NS",
+     "template": "ma_cross",
+     "params": {
+      "fast": 20,
+      "slow": 50
+     },
+     "exits": {
+      "hold_days": 15,
+      "stop_pct": 4.0,
+      "tp_pct": 8.0
+     }
+    },
+    "confidence": 0.92,
+    "assumptions": [],
+    "unsupported": []
+   },
+   {
+    "step": "pre_run_memory",
+    "warnings": [
+     "7 of 11 past ma_cross backtests lost money in their locked year; only 8 beat buy and hold.",
+     "Today's setup on TCS.NS (trend=up, volume=dry, volatility=normal, momentum=flat) resembles 22 past ma_cross trades that won 64% vs 54% overall."
+    ],
+    "keys": [
+     "ticker",
+     "template",
+     "warnings",
+     "current_setup",
+     "similar",
+     "memory_runs",
+     "recent_lessons"
+    ]
+   },
+   {
+    "step": "last_time_before_first_run",
+    "headline": "As of 30 Sep 2026 (replayed from real data) ma_cross on TCS: INCONCLUSIVE, test +11.8%; price then moved +22.7% in 20 days.",
+    "lesson": "Too few trades in the locked year to judge. Loosen the entry rule or test more stocks before drawing a conclusion.",
+    "replayed": true,
+    "total": 26
+   },
+   {
+    "step": "backtest",
+    "spec": {
+     "ticker": "TCS.NS",
+     "template": "ma_cross",
+     "params": {
+      "fast": 20,
+      "slow": 50
+     },
+     "exits": {
+      "hold_days": 15,
+      "stop_pct": 4.0,
+      "tp_pct": 8.0
+     },
+     "cost_bps": 15.0
+    },
+    "train": {
+     "trades": 11,
+     "ret": 7.33,
+     "mdd": -12.43,
+     "win": 45.45,
+     "sharpe": 0.27
+    },
+    "locked": {
+     "trades": 4,
+     "ret": -1.9,
+     "mdd": -8.12,
+     "win": 50.0,
+     "sharpe": -0.29
+    },
+    "bh_locked": -13.99,
+    "bh_train": -9.51
+   },
+   {
+    "step": "refine",
+    "flag": "ok",
+    "headline": "Refinement held up on the locked year.",
+    "refined_params": {
+     "fast": 16,
+     "slow": 30
+    },
+    "refined_exits": {
+     "hold_days": 15,
+     "stop_pct": 2.0,
+     "tp_pct": 12.0
+    },
+    "changed": true,
+    "original": {
+     "train": {
+      "trades": 11,
+      "ret": 7.33,
+      "mdd": -12.43,
+      "win": 45.45,
+      "sharpe": 0.27
+     },
+     "locked": {
+      "trades": 4,
+      "ret": -1.9,
+      "mdd": -8.12,
+      "win": 50.0,
+      "sharpe": -0.29
+     }
+    },
+    "refined": {
+     "train": {
+      "trades": 16,
+      "ret": 31.16,
+      "mdd": -11.41,
+      "win": 43.75,
+      "sharpe": 0.93
+     },
+     "locked": {
+      "trades": 3,
+      "ret": 7.08,
+      "mdd": -2.95,
+      "win": 33.33,
+      "sharpe": 0.98
+     }
+    },
+    "trials": 400,
+    "notes": [
+     "On the locked year the refined version returned +7.1% vs -1.9% for your original (small samples can flatter either version).",
+     "Holding up on one locked year is encouraging, not proof: in Rex's own out-of-sample tests (docs/PERSONA_QA.md) 'held up' refinements were not reliably better than the original.",
+     "Best of 265 candidates tried on training data; picking the best of many looks better than it is (multiple testing)."
+    ]
+   },
+   {
+    "step": "persona_decision",
+    "follow_rex": true,
+    "uses": "refined rules",
+    "params": {
+     "fast": 16,
+     "slow": 30
+    },
+    "exits": {
+     "hold_days": 15,
+     "stop_pct": 2.0,
+     "tp_pct": 12.0
+    }
+   },
+   {
+    "step": "logged_trade_tracking",
+    "session": "fe5bdbdb65",
+    "mode": "logged",
+    "entry": 2568.0,
+    "qty": 5,
+    "live_price": 2502.6,
+    "market": "Closed (weekend)",
+    "net_pct": -2.7,
+    "pnl_abs": -346.26,
+    "dist_to_stop_pct": -0.56,
+    "dist_to_tp_pct": 14.93,
+    "exit_alert": true,
+    "exit_text": "Stop-loss level Rs 2,516.64 (2% against your entry) was reached on 26 Oct."
+   },
+   {
+    "step": "paper_tracking_no_trade",
+    "session": "604c44e671",
+    "phase": "watching",
+    "watching": "Entry condition is not met at the 2026-10-30 close. Rex is watching for it.",
+    "position": false
+   },
+   {
+    "step": "closed",
+    "status": "closed",
+    "verdict": "LOST",
+    "lesson": null,
+    "net_pct": -2.7,
+    "saved": {
+     "strategy_memory": {
+      "run_id": "trk_fe5bdbdb65",
+      "verdict": "LOST",
+      "headline": "On 1 Nov 2026 you took BUY TCS (ma_cross) in your broker: LOST, -2.7% in 9d; not enough trading days have passed yet to see how price moved.",
+      "stored_in": "sqlite",
+      "meko_mirror": "off"
+     },
+     "journal": {
+      "added": false,
+      "reason": "you chose not to add it to your journal"
+     },
+     "lesson": "Price was up +0.0% at its best but you closed at -2.7%: consider the strategy's target or a trailing exit instead of waiting."
+    },
+    "exit_price": null
+   },
+   {
+    "step": "last_time_before_similar_backtest",
+    "headline": "On 1 Nov 2026 you took BUY TCS (ma_cross) in your broker: LOST, -2.7% in 9d; not enough trading days have passed yet to see how price moved.",
+    "lesson": "Price was up +0.0% at its best but you closed at -2.7%: consider the strategy's target or a trailing exit instead of waiting.",
+    "match": "same ticker and strategy",
+    "kind": "tracked_trade",
+    "fwd5": null,
+    "fwd20": null,
+    "since_pct": null
+   },
+   {
+    "step": "similar_backtest",
+    "params": {
+     "fast": 15,
+     "slow": 50
+    },
+    "locked": {
+     "trades": 3,
+     "ret": -1.23,
+     "mdd": -10.47,
+     "win": 33.33,
+     "sharpe": -0.07
+    },
+    "train": {
+     "trades": 11,
+     "ret": 10.85,
+     "mdd": -10.81,
+     "win": 36.36,
+     "sharpe": 0.41
+    }
+   },
+   {
+    "step": "out_of_sample_as_of",
+    "results": [
+     {
+      "cut": "2024-04-30",
+      "flag": "no_change",
+      "changed": false,
+      "refined_params": {
+       "fast": 20,
+       "slow": 50
+      },
+      "refined_exits": {
+       "hold_days": 15,
+       "stop_pct": 4.0,
+       "tp_pct": 8.0
+      },
+      "original": {
+       "ret": -3.98,
+       "mdd": -15.8,
+       "trades": 8
+      },
+      "refined": {
+       "ret": -3.98,
+       "mdd": -15.8,
+       "trades": 8
+      },
+      "follow_rex": {
+       "ret": -3.98,
+       "mdd": -15.8
+      },
+      "buy_hold": {
+       "ret": -28.44,
+       "mdd": -53.39
+      },
+      "forward_days": 620
+     },
+     {
+      "cut": "2025-04-30",
+      "flag": "overfit",
+      "changed": true,
+      "refined_params": {
+       "fast": 20,
+       "slow": 30
+      },
+      "refined_exits": {
+       "hold_days": 15,
+       "stop_pct": 2.0,
+       "tp_pct": 8.0
+      },
+      "original": {
+       "ret": -7.11,
+       "mdd": -9.99,
+       "trades": 6
+      },
+      "refined": {
+       "ret": -15.63,
+       "mdd": -15.94,
+       "trades": 7
+      },
+      "follow_rex": {
+       "ret": -7.11,
+       "mdd": -9.99
+      },
+      "buy_hold": {
+       "ret": -23.2,
+       "mdd": -42.58
+      },
+      "forward_days": 373
+     }
+    ]
+   }
+  ]
+ },
+ "C_optimizer": {
+  "persona": "Optimizer Omkar (tunes until the backtest looks great, ignores warnings)",
+  "steps": [
+   {
+    "step": "parse",
+    "text": "Buy JIOFIN when RSI goes below 30, hold 8 days, 4% stop loss, 8% take profit",
+    "strategy": {
+     "ticker": "JIOFIN.NS",
+     "template": "rsi",
+     "params": {
+      "period": 14,
+      "level": 30.0,
+      "mode": "oversold"
+     },
+     "exits": {
+      "hold_days": 8,
+      "stop_pct": 4.0,
+      "tp_pct": 8.0
+     }
+    },
+    "confidence": 0.84,
+    "assumptions": [
+     "RSI period not stated: using default 14"
+    ],
+    "unsupported": []
+   },
+   {
+    "step": "pre_run_memory",
+    "warnings": [
+     "12 of 20 past rsi backtests lost money in their locked year; only 17 beat buy and hold.",
+     "Today's setup on JIOFIN.NS (trend=down, volume=dry, volatility=normal, momentum=flat) resembles 12 past rsi trades; win rate 50% vs 51% overall (no clear signal)."
+    ],
+    "keys": [
+     "ticker",
+     "template",
+     "warnings",
+     "current_setup",
+     "similar",
+     "memory_runs",
+     "recent_lessons"
+    ]
+   },
+   {
+    "step": "last_time_before_first_run",
+    "headline": "As of 30 Sep 2026 (replayed from real data) rsi on JIOFIN: LOST, test -20.2%; price then moved -5.7% in 20 days.",
+    "lesson": "It lost money on the locked year. Change the rule or the stock before trusting it.",
+    "replayed": true,
+    "total": 26
+   },
+   {
+    "step": "backtest",
+    "spec": {
+     "ticker": "JIOFIN.NS",
+     "template": "rsi",
+     "params": {
+      "period": 14,
+      "level": 30.0,
+      "mode": "oversold"
+     },
+     "exits": {
+      "hold_days": 8,
+      "stop_pct": 4.0,
+      "tp_pct": 8.0
+     },
+     "cost_bps": 15.0
+    },
+    "train": {
+     "trades": 12,
+     "ret": -7.3,
+     "mdd": -23.11,
+     "win": 41.67,
+     "sharpe": -0.25
+    },
+    "locked": {
+     "trades": 9,
+     "ret": -14.97,
+     "mdd": -17.73,
+     "win": 33.33,
+     "sharpe": -1.27
+    },
+    "bh_locked": -33.84,
+    "bh_train": 21.66
+   },
+   {
+    "step": "refine",
+    "flag": "overfit",
+    "headline": "Overfit warning: the refinement looked good in training but collapsed on the locked final year.",
+    "refined_params": {
+     "period": 8,
+     "level": 24.0,
+     "mode": "oversold"
+    },
+    "refined_exits": {
+     "hold_days": 4,
+     "stop_pct": 6.0,
+     "tp_pct": 4.0
+    },
+    "changed": true,
+    "original": {
+     "train": {
+      "trades": 12,
+      "ret": -7.3,
+      "mdd": -23.11,
+      "win": 41.67,
+      "sharpe": -0.25
+     },
+     "locked": {
+      "trades": 9,
+      "ret": -14.97,
+      "mdd": -17.73,
+      "win": 33.33,
+      "sharpe": -1.27
+     }
+    },
+    "refined": {
+     "train": {
+      "trades": 11,
+      "ret": 17.13,
+      "mdd": -10.26,
+      "win": 72.73,
+      "sharpe": 0.83
+     },
+     "locked": {
+      "trades": 8,
+      "ret": -15.2,
+      "mdd": -17.15,
+      "win": 25.0,
+      "sharpe": -1.49
+     }
+    },
+    "trials": 400,
+    "notes": [
+     "Refined Sharpe fell from 0.83 (train) to -1.49 (locked year): the tuned parameters did not hold up.",
+     "On the locked year the refined version returned -15.2% vs -15.0% for your original: refinement did not help out of sample.",
+     "Best of 214 candidates tried on training data; picking the best of many looks better than it is (multiple testing)."
+    ]
+   },
+   {
+    "step": "persona_decision",
+    "follow_rex": false,
+    "uses": "refined rules",
+    "params": {
+     "period": 8,
+     "level": 24.0,
+     "mode": "oversold"
+    },
+    "exits": {
+     "hold_days": 4,
+     "stop_pct": 6.0,
+     "tp_pct": 4.0
+    }
+   },
+   {
+    "step": "logged_trade_tracking",
+    "session": "6e638db486",
+    "mode": "logged",
+    "entry": 211.05,
+    "qty": 50,
+    "live_price": 204.5,
+    "market": "Closed (weekend)",
+    "net_pct": -3.25,
+    "pnl_abs": -343.33,
+    "dist_to_stop_pct": 2.99,
+    "dist_to_tp_pct": 7.33,
+    "exit_alert": true,
+    "exit_text": "Max hold of 4 trading days reached (29 Oct)."
+   },
+   {
+    "step": "paper_tracking_no_trade",
+    "session": "a9a91dcef0",
+    "phase": "watching",
+    "watching": "Entry condition is not met at the 2026-10-30 close. Rex is watching for it.",
+    "position": false
+   },
+   {
+    "step": "closed",
+    "status": "closed",
+    "verdict": "LOST",
+    "lesson": null,
+    "net_pct": -3.25,
+    "saved": {
+     "strategy_memory": {
+      "run_id": "trk_6e638db486",
+      "verdict": "LOST",
+      "headline": "On 1 Nov 2026 you took BUY JIOFIN (rsi) in your broker: LOST, -3.2% in 9d; not enough trading days have passed yet to see how price moved.",
+      "stored_in": "sqlite",
+      "meko_mirror": "off"
+     },
+     "journal": {
+      "added": false,
+      "reason": "you chose not to add it to your journal"
+     },
+     "lesson": "The strategy's exit fired on 2026-10-29 but you held longer; that cost about 1.2%. Next time act on the exit alert or set a rule for ignoring it."
+    },
+    "exit_price": null
+   },
+   {
+    "step": "last_time_before_similar_backtest",
+    "headline": "On 1 Nov 2026 you took BUY JIOFIN (rsi) in your broker: LOST, -3.2% in 9d; not enough trading days have passed yet to see how price moved.",
+    "lesson": "The strategy's exit fired on 2026-10-29 but you held longer; that cost about 1.2%. Next time act on the exit alert or set a rule for ignoring it.",
+    "match": "same ticker and strategy",
+    "kind": "tracked_trade",
+    "fwd5": null,
+    "fwd20": null,
+    "since_pct": null
+   },
+   {
+    "step": "similar_backtest",
+    "params": {
+     "period": 8,
+     "level": 35.0,
+     "mode": "oversold"
+    },
+    "locked": {
+     "trades": 23,
+     "ret": -25.85,
+     "mdd": -28.61,
+     "win": 34.78,
+     "sharpe": -1.74
+    },
+    "train": {
+     "trades": 28,
+     "ret": -18.18,
+     "mdd": -26.8,
+     "win": 46.43,
+     "sharpe": -0.52
+    }
+   },
+   {
+    "step": "out_of_sample_as_of",
+    "results": [
+     {
+      "cut": "2024-04-30",
+      "skipped": "not enough history"
+     },
+     {
+      "cut": "2025-04-30",
+      "flag": "no_change",
+      "changed": false,
+      "refined_params": {
+       "period": 14,
+       "level": 30.0,
+       "mode": "oversold"
+      },
+      "refined_exits": {
+       "hold_days": 8,
+       "stop_pct": 4.0,
+       "tp_pct": 8.0
+      },
+      "original": {
+       "ret": -11.61,
+       "mdd": -18.26,
+       "trades": 10
+      },
+      "refined": {
+       "ret": -11.61,
+       "mdd": -18.26,
+       "trades": 10
+      },
+      "follow_rex": {
+       "ret": -11.61,
+       "mdd": -18.26
+      },
+      "buy_hold": {
+       "ret": -21.17,
+       "mdd": -38.51
+      },
+      "forward_days": 373
+     }
+    ]
+   }
+  ]
+ }
+}
