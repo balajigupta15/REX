@@ -1,0 +1,118 @@
+- generic [active] [ref=f5e1]:
+  - banner [ref=f5e2]:
+    - generic [ref=f5e3]:
+      - link "R Rex coach with a memory" [ref=f5e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f5e5]: R
+        - generic [ref=f5e6]: Rex
+        - generic [ref=f5e7]: coach with a memory
+      - navigation [ref=f5e8]:
+        - link "Home" [ref=f5e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=f5e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=f5e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=f5e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=f5e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=f5e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=f5e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=f5e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=f5e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=f5e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=f5e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=f5e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=f5e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=f5e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=f5e23]:
+        - generic [ref=f5e28]: Ctrl K
+  - main [ref=f5e29]:
+    - generic [ref=f5e30]:
+      - generic [ref=f5e32]:
+        - heading "Strategy builder" [level=1] [ref=f5e33]
+        - paragraph [ref=f5e34]: Pick a template and a stock, set the parameters and costs, run. Rex checks its memory first and tells you what it already knows about this setup.
+      - generic [ref=f5e35]:
+        - generic [ref=f5e36]:
+          - heading "Describe your strategy" [level=3] [ref=f5e38]
+          - paragraph [ref=f5e39]: "Write it the way you would say it. Rex turns it into rules, fills the form below, and you check it before anything runs. Supported: N-day-high breakout, MA crossover, RSI, mean reversion, plus hold days, stop-loss and take-profit."
+        - generic [ref=f5e40]:
+          - textbox "Describe your strategy" [ref=f5e41]:
+            - /placeholder: e.g. Buy Reliance when it breaks above the 20-day high, hold 10 days, 3% stop loss, 8% take profit
+          - generic [ref=f5e42]:
+            - generic [ref=f5e43]: "Try:"
+            - button "Breakout" [ref=f5e44]
+            - button "MA crossover" [ref=f5e45]
+            - button "RSI bounce" [ref=f5e46]
+            - generic [ref=f5e47]:
+              - generic [ref=f5e48]: 0/1000
+              - button "Parse" [disabled]
+      - generic [ref=f5e49]:
+        - generic [ref=f5e50]:
+          - generic [ref=f5e51]:
+            - heading "Setup" [level=3] [ref=f5e52]
+            - paragraph [ref=f5e53]: Buy when the close breaks above the highest high of the previous N days.
+          - generic [ref=f5e54]:
+            - generic [ref=f5e55]:
+              - generic [ref=f5e56]:
+                - generic [ref=f5e57]: Stock
+                - combobox "Stock" [ref=f5e58]: INFY.NS
+              - generic [ref=f5e59]:
+                - generic [ref=f5e60]: Template
+                - combobox "Template" [ref=f5e61]:
+                  - 'option "Breakout: N-day high" [selected]'
+                  - option "Moving-average crossover"
+                  - option "RSI oversold / overbought"
+                  - option "Mean reversion (z-score)"
+            - generic [ref=f5e62]:
+              - generic [ref=f5e63]: Parameters
+              - generic [ref=f5e65]:
+                - generic [ref=f5e66]: Lookback N (days)
+                - spinbutton "Lookback N (days)" [ref=f5e67]: "20"
+            - generic [ref=f5e68]:
+              - generic [ref=f5e69]: Exits
+              - generic [ref=f5e70]:
+                - generic [ref=f5e71]:
+                  - generic [ref=f5e72]: Max hold (trading days)
+                  - spinbutton "Max hold (trading days)" [ref=f5e73]: "10"
+                - generic [ref=f5e74]:
+                  - generic [ref=f5e75]: Stop-loss %(optional)
+                  - spinbutton "Stop-loss %(optional)" [ref=f5e76]
+                - generic [ref=f5e77]:
+                  - generic [ref=f5e78]: Take-profit %(optional)
+                  - spinbutton "Take-profit %(optional)" [ref=f5e79]
+            - generic [ref=f5e82]:
+              - generic [ref=f5e83]: Cost model
+              - combobox "Cost model" [ref=f5e84]:
+                - option "Flat bps (simple)" [selected]
+                - 'option "India: delivery (CNC)"'
+                - 'option "India: intraday (MIS)"'
+            - generic [ref=f5e85]:
+              - generic [ref=f5e86]: Round-trip cost (bps)
+              - spinbutton "Round-trip cost (bps)" [ref=f5e87]: "15"
+              - paragraph [ref=f5e88]: "ASSUMPTION: round-trip cost in basis points, editable"
+            - generic [ref=f5e89]:
+              - button "Run backtest" [ref=f5e90]
+              - generic [ref=f5e93]: The last 365 days are held out and only shown as the “locked” window.
+        - generic [ref=f5e94]:
+          - generic [ref=f5e95]:
+            - heading "Last time" [level=3] [ref=f5e102]
+            - paragraph [ref=f5e104]: Price moves after each run come from real yfinance closes. Hints from the past, not predictions.
+          - generic [ref=f5e105]:
+            - heading "Latest news" [level=3] [ref=f5e107]
+            - paragraph [ref=f5e109]: Loading…
+          - 'heading "Before you run: Rex remembers" [level=3] [ref=f5e117]'
+  - contentinfo [ref=f5e120]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=f5e121]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=f5e122]

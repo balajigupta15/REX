@@ -1,0 +1,374 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - link "R Rex coach with a memory" [ref=f4e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e5]: R
+        - generic [ref=f4e6]: Rex
+        - generic [ref=f4e7]: coach with a memory
+      - navigation [ref=f4e8]:
+        - link "Home" [ref=f4e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=f4e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=f4e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=f4e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=f4e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=f4e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=f4e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=f4e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=f4e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=f4e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=f4e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=f4e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=f4e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=f4e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=f4e23]:
+        - generic [ref=f4e28]: Ctrl K
+  - main [ref=f4e29]:
+    - generic [ref=f4e30]:
+      - generic [ref=f4e31]:
+        - generic [ref=f4e32]:
+          - heading "Trade journal" [level=1] [ref=f4e33]
+          - paragraph [ref=f4e34]: Import a broker tradebook (CSV). Rex pairs fills into round trips, tags the market context at each entry, and finds the setups you keep repeating.
+        - generic "Synthetic trader behaviour on real prices. Not a real trader's record." [ref=f4e65]: SAMPLE DATA
+      - generic [ref=f4e36]:
+        - button "Drop your tradebook CSV here, or click to choose Zerodha-style columns (symbol, trade_date, trade_type, quantity, price). Headers are auto-mapped. Stays on this machine." [ref=f4e37] [cursor=pointer]:
+          - generic [ref=f4e42]: Drop your tradebook CSV here, or click to choose
+          - generic [ref=f4e43]: Zerodha-style columns (symbol, trade_date, trade_type, quantity, price). Headers are auto-mapped. Stays on this machine.
+        - generic [ref=f4e44]:
+          - button "Load sample journal" [ref=f4e45]
+          - link "Download sample CSV" [ref=f4e50] [cursor=pointer]:
+            - /url: http://localhost:8000/trades/sample
+          - paragraph [ref=f4e56]: The sample is synthetic trading behaviour on real prices. It is always labelled SAMPLE DATA.
+      - generic [ref=f4e70]:
+        - heading [level=2] [ref=f4e71]:
+          - text: Mistakes dashboard
+          - generic "Synthetic trader behaviour on real prices. Not a real trader's record." [ref=f4e72]: SAMPLE DATA
+        - button "Clear journal" [ref=f4e77]
+      - generic [ref=f4e84]:
+        - generic [ref=f4e85]:
+          - generic [ref=f4e86]: Win rate
+          - generic [ref=f4e87]: 77%
+          - generic [ref=f4e88]: 91 of 118 round trips
+        - generic [ref=f4e89]:
+          - generic [ref=f4e90]: Total P&L
+          - generic [ref=f4e91]: +₹10,310
+          - generic [ref=f4e92]: +₹87 per trade
+        - generic [ref=f4e93]:
+          - generic [ref=f4e94]: Avg win / avg loss
+          - generic [ref=f4e95]: +2.5% / -7.9%
+          - generic [ref=f4e97]: small wins, big losses is the classic trap
+        - generic [ref=f4e98]:
+          - generic [ref=f4e99]: Avg hold
+          - generic [ref=f4e100]: 16.9 days
+          - generic [ref=f4e101]: 74 patterns tested
+      - generic [ref=f4e102]:
+        - generic [ref=f4e103]:
+          - generic [ref=f4e104]:
+            - 'heading "Hold time: losers vs winners" [level=3] [ref=f4e105]'
+            - paragraph [ref=f4e106]: "You hold losing trades about 33.1 calendar days vs 12.1 for winners (27 losers, 91 winners). Losers run longer than winners: a pre-set stop would address that."
+          - application [ref=f4e111]:
+            - generic [ref=f4e153]:
+              - generic [ref=f4e154]:
+                - generic [ref=f4e155]: "0"
+                - generic [ref=f4e157]: "9"
+                - generic [ref=f4e159]: "18"
+                - generic [ref=f4e161]: "27"
+                - generic [ref=f4e163]: "36"
+              - generic [ref=f4e165]:
+                - generic [ref=f4e166]: Winners
+                - generic [ref=f4e168]: Losers
+              - generic [ref=f4e170]:
+                - generic [ref=f4e171]: 12.1d
+                - generic [ref=f4e172]: 33.1d
+        - generic [ref=f4e173]:
+          - generic [ref=f4e174]:
+            - heading "Average win vs average loss" [level=3] [ref=f4e175]
+            - paragraph [ref=f4e176]: Return per round trip, in percent.
+          - application [ref=f4e181]:
+            - generic [ref=f4e223]:
+              - generic [ref=f4e224]:
+                - generic [ref=f4e225]: Avg win
+                - generic [ref=f4e227]: Avg loss
+              - generic [ref=f4e229]:
+                - generic [ref=f4e230]: "-9%"
+                - generic [ref=f4e232]: "-6%"
+                - generic [ref=f4e234]: "-3%"
+                - generic [ref=f4e236]: 0%
+                - generic [ref=f4e238]: 3%
+              - generic [ref=f4e240]:
+                - generic [ref=f4e241]: 2.5%
+                - generic [ref=f4e242]: "-7.9%"
+      - generic [ref=f4e243]:
+        - generic [ref=f4e244]:
+          - heading "Top repeated mistakes" [level=3] [ref=f4e250]
+          - paragraph [ref=f4e251]: "Setups where you do clearly worse than your own average. Small samples: hints, not proof."
+        - generic [ref=f4e252]:
+          - generic [ref=f4e253]:
+            - generic [ref=f4e254]:
+              - generic [ref=f4e255]: repeat mistake
+              - generic [ref=f4e256]: n=15 · win 60% vs 77% · avg -2.23% · -₹1,970/trade
+            - paragraph [ref=f4e257]: "When you bought with price above both the 20 and 50 DMA and stressed volatility regime (20-day vol over 1.2x its 1-year level): 15 trades, win rate 60% (your average is 77%), avg return -2.2%. This is a repeat mistake pattern. Small sample: a hint, not proof."
+            - paragraph [ref=f4e258]: "Wait for: wait for volatility to settle, or trade smaller with a wider stop"
+          - generic [ref=f4e259]:
+            - generic [ref=f4e260]:
+              - generic [ref=f4e261]: repeat mistake
+              - generic [ref=f4e262]: n=13 · win 62% vs 77% · avg -2.49% · -₹2,244/trade
+            - paragraph [ref=f4e263]: "When you bought with price stretched more than 5% above its 20 DMA (extended) and stressed volatility regime (20-day vol over 1.2x its 1-year level): 13 trades, win rate 62% (your average is 77%), avg return -2.5%. This is a repeat mistake pattern. Small sample: a hint, not proof."
+            - paragraph [ref=f4e264]: "Wait for: wait for a pullback toward the 20 DMA instead of buying strength / wait for volatility to settle, or trade smaller with a wider stop"
+      - generic [ref=f4e265]:
+        - heading "Where you do well" [level=3] [ref=f4e268]
+        - generic [ref=f4e269]:
+          - generic [ref=f4e270]:
+            - generic [ref=f4e271]:
+              - generic [ref=f4e272]: your edge
+              - generic [ref=f4e273]: n=9 · win 100% vs 77% · avg +2.20% · +₹1,615/trade
+            - paragraph [ref=f4e274]: "When you bought with price more than 5% below its 20 DMA (deep pullback) and gap up at the open (1% or more): 9 trades, win rate 100% (your average is 77%), avg return +2.2%. This looks like your better setup. Small sample: a hint, not proof."
+          - generic [ref=f4e275]:
+            - generic [ref=f4e276]:
+              - generic [ref=f4e277]: your edge
+              - generic [ref=f4e278]: n=8 · win 100% vs 77% · avg +2.08% · +₹1,202/trade
+            - paragraph [ref=f4e279]: "When you bought with volume spike (prior session at least 1.5x its 20-day average) and flat open: 8 trades, win rate 100% (your average is 77%), avg return +2.1%. This looks like your better setup. Small sample: a hint, not proof."
+          - generic [ref=f4e280]:
+            - generic [ref=f4e281]:
+              - generic [ref=f4e282]: your edge
+              - generic [ref=f4e283]: n=14 · win 93% vs 77% · avg +1.34% · +₹1,438/trade
+            - paragraph [ref=f4e284]: "When you bought with price below both the 20 and 50 DMA and price more than 5% below its 20 DMA (deep pullback): 14 trades, win rate 93% (your average is 77%), avg return +1.3%. This looks like your better setup. Small sample: a hint, not proof."
+      - generic [ref=f4e285]:
+        - heading "Round trips (118)" [level=3] [ref=f4e287]
+        - generic [ref=f4e288]:
+          - table [ref=f4e290]:
+            - rowgroup [ref=f4e291]:
+              - row [ref=f4e292]:
+                - columnheader "Symbol" [ref=f4e293]
+                - columnheader "Side" [ref=f4e294]
+                - columnheader "Entry" [ref=f4e295]
+                - columnheader "Exit" [ref=f4e296]
+                - columnheader "Hold" [ref=f4e297]
+                - columnheader "Return" [ref=f4e298]
+                - columnheader "P&L" [ref=f4e299]
+            - rowgroup [ref=f4e300]:
+              - row [ref=f4e521]:
+                - cell "HDFCBANK" [ref=f4e522]
+                - cell "long" [ref=f4e303]
+                - cell "2026-04-08" [ref=f4e523]
+                - cell "2026-04-21" [ref=f4e524]
+                - cell "13d" [ref=f4e525]
+                - cell "+1.47%" [ref=f4e526]
+                - cell "+₹1,097" [ref=f4e527]
+              - row [ref=f4e528]:
+                - cell "BHARTIARTL" [ref=f4e529]
+                - cell "long" [ref=f4e311]
+                - cell "2026-04-08" [ref=f4e530]
+                - cell "2026-04-29" [ref=f4e531]
+                - cell "21d" [ref=f4e532]
+                - cell "+1.29%" [ref=f4e533]
+                - cell "+₹976" [ref=f4e534]
+              - row [ref=f4e535]:
+                - cell "HDFCBANK" [ref=f4e536]
+                - cell "long" [ref=f4e319]
+                - cell "2026-04-01" [ref=f4e537]
+                - cell "2026-04-06" [ref=f4e538]
+                - cell "5d" [ref=f4e539]
+                - cell "+3.77%" [ref=f4e540]
+                - cell "+₹3,774" [ref=f4e541]
+              - row [ref=f4e542]:
+                - cell "JIOFIN" [ref=f4e543]
+                - cell "long" [ref=f4e327]
+                - cell "2026-03-24" [ref=f4e544]
+                - cell "2026-04-06" [ref=f4e545]
+                - cell "13d" [ref=f4e546]
+                - cell "+1.05%" [ref=f4e547]
+                - cell "+₹791" [ref=f4e548]
+              - row [ref=f4e549]:
+                - cell "RELIANCE" [ref=f4e550]
+                - cell "long" [ref=f4e335]
+                - cell "2026-03-20" [ref=f4e551]
+                - cell "2026-04-29" [ref=f4e552]
+                - cell "40d" [ref=f4e553]
+                - cell "+1.96%" [ref=f4e554]
+                - cell "+₹1,966" [ref=f4e555]
+              - row [ref=f4e556]:
+                - cell "INFY" [ref=f4e557]
+                - cell "long" [ref=f4e343]
+                - cell "2026-03-20" [ref=f4e558]
+                - cell "2026-04-06" [ref=f4e559]
+                - cell "17d" [ref=f4e560]
+                - cell "+4.96%" [ref=f4e561]
+                - cell "+₹2,471" [ref=f4e562]
+              - row [ref=f4e563]:
+                - cell "SBIN" [ref=f4e564]
+                - cell "long" [ref=f4e351]
+                - cell "2026-02-25" [ref=f4e565]
+                - cell "2026-03-13" [ref=f4e566]
+                - cell "16d" [ref=f4e567]
+                - cell "-14.75%" [ref=f4e568]
+                - cell "-₹14,766" [ref=f4e569]
+              - row [ref=f4e570]:
+                - cell "TCS" [ref=f4e571]
+                - cell "long" [ref=f4e359]
+                - cell "2026-02-20" [ref=f4e572]
+                - cell "2026-04-01" [ref=f4e573]
+                - cell "40d" [ref=f4e574]
+                - cell "-9.70%" [ref=f4e575]
+                - cell "-₹2,526" [ref=f4e576]
+              - row [ref=f4e577]:
+                - cell "LT" [ref=f4e578]
+                - cell "long" [ref=f4e367]
+                - cell "2026-02-19" [ref=f4e579]
+                - cell "2026-03-12" [ref=f4e580]
+                - cell "21d" [ref=f4e581]
+                - cell "-14.02%" [ref=f4e582]
+                - cell "-₹3,604" [ref=f4e583]
+              - row [ref=f4e584]:
+                - cell "BHARTIARTL" [ref=f4e585]
+                - cell "long" [ref=f4e375]
+                - cell "2026-02-11" [ref=f4e586]
+                - cell "2026-03-19" [ref=f4e587]
+                - cell "36d" [ref=f4e588]
+                - cell "-9.25%" [ref=f4e589]
+                - cell "-₹10,483" [ref=f4e590]
+              - row [ref=f4e591]:
+                - cell "SBIN" [ref=f4e592]
+                - cell "long" [ref=f4e383]
+                - cell "2026-02-03" [ref=f4e593]
+                - cell "2026-02-09" [ref=f4e594]
+                - cell "6d" [ref=f4e595]
+                - cell "+5.43%" [ref=f4e596]
+                - cell "+₹2,724" [ref=f4e597]
+              - row [ref=f4e598]:
+                - cell "RELIANCE" [ref=f4e599]
+                - cell "long" [ref=f4e391]
+                - cell "2026-02-03" [ref=f4e600]
+                - cell "2026-03-12" [ref=f4e601]
+                - cell "37d" [ref=f4e602]
+                - cell "-5.61%" [ref=f4e603]
+                - cell "-₹2,798" [ref=f4e604]
+              - row [ref=f4e605]:
+                - cell "ITC" [ref=f4e606]
+                - cell "long" [ref=f4e399]
+                - cell "2026-02-03" [ref=f4e607]
+                - cell "2026-02-06" [ref=f4e608]
+                - cell "3d" [ref=f4e609]
+                - cell "+3.56%" [ref=f4e610]
+                - cell "+₹3,564" [ref=f4e611]
+              - row [ref=f4e612]:
+                - cell "HDFCBANK" [ref=f4e613]
+                - cell "long" [ref=f4e407]
+                - cell "2026-02-03" [ref=f4e614]
+                - cell "2026-03-09" [ref=f4e615]
+                - cell "34d" [ref=f4e616]
+                - cell "-13.71%" [ref=f4e617]
+                - cell "-₹6,900" [ref=f4e618]
+              - row [ref=f4e619]:
+                - cell "JIOFIN" [ref=f4e620]
+                - cell "long" [ref=f4e415]
+                - cell "2026-01-23" [ref=f4e621]
+                - cell "2026-02-06" [ref=f4e622]
+                - cell "14d" [ref=f4e623]
+                - cell "+1.54%" [ref=f4e624]
+                - cell "+₹1,154" [ref=f4e625]
+              - row [ref=f4e626]:
+                - cell "INFY" [ref=f4e627]
+                - cell "long" [ref=f4e423]
+                - cell "2026-01-21" [ref=f4e628]
+                - cell "2026-02-03" [ref=f4e629]
+                - cell "13d" [ref=f4e630]
+                - cell "+0.30%" [ref=f4e631]
+                - cell "+₹150" [ref=f4e632]
+              - row [ref=f4e633]:
+                - cell "INFY" [ref=f4e634]
+                - cell "long" [ref=f4e431]
+                - cell "2026-01-13" [ref=f4e635]
+                - cell "2026-01-16" [ref=f4e636]
+                - cell "3d" [ref=f4e637]
+                - cell "+4.44%" [ref=f4e638]
+                - cell "+₹3,302" [ref=f4e639]
+              - row [ref=f4e640]:
+                - cell "BHARTIARTL" [ref=f4e641]
+                - cell "long" [ref=f4e439]
+                - cell "2025-12-19" [ref=f4e642]
+                - cell "2026-01-27" [ref=f4e643]
+                - cell "39d" [ref=f4e644]
+                - cell "-6.65%" [ref=f4e645]
+                - cell "-₹3,331" [ref=f4e646]
+              - row [ref=f4e647]:
+                - cell "JIOFIN" [ref=f4e446]
+                - cell "long" [ref=f4e447]
+                - cell "2025-12-15" [ref=f4e648]
+                - cell "2026-01-02" [ref=f4e649]
+                - cell "18d" [ref=f4e650]
+                - cell "+0.91%" [ref=f4e651]
+                - cell "+₹454" [ref=f4e652]
+              - row [ref=f4e653]:
+                - cell "HDFCBANK" [ref=f4e654]
+                - cell "long" [ref=f4e455]
+                - cell "2025-12-10" [ref=f4e655]
+                - cell "2026-01-05" [ref=f4e656]
+                - cell "26d" [ref=f4e657]
+                - cell "-0.79%" [ref=f4e658]
+                - cell "-₹593" [ref=f4e659]
+              - row [ref=f4e660]:
+                - cell "INFY" [ref=f4e661]
+                - cell "long" [ref=f4e463]
+                - cell "2025-11-24" [ref=f4e662]
+                - cell "2025-12-05" [ref=f4e663]
+                - cell "11d" [ref=f4e664]
+                - cell "+3.36%" [ref=f4e665]
+                - cell "+₹2,521" [ref=f4e666]
+              - row [ref=f4e667]:
+                - cell "TCS" [ref=f4e668]
+                - cell "long" [ref=f4e471]
+                - cell "2025-11-07" [ref=f4e669]
+                - cell "2025-11-12" [ref=f4e670]
+                - cell "5d" [ref=f4e671]
+                - cell "+4.36%" [ref=f4e672]
+                - cell "+₹4,389" [ref=f4e673]
+              - row [ref=f4e674]:
+                - cell "JIOFIN" [ref=f4e675]
+                - cell "long" [ref=f4e479]
+                - cell "2025-11-07" [ref=f4e676]
+                - cell "2025-11-12" [ref=f4e677]
+                - cell "5d" [ref=f4e678]
+                - cell "+4.22%" [ref=f4e679]
+                - cell "+₹2,113" [ref=f4e680]
+              - row [ref=f4e681]:
+                - cell "HDFCBANK" [ref=f4e682]
+                - cell "long" [ref=f4e487]
+                - cell "2025-11-06" [ref=f4e683]
+                - cell "2025-11-14" [ref=f4e684]
+                - cell "8d" [ref=f4e685]
+                - cell "+0.88%" [ref=f4e686]
+                - cell "+₹439" [ref=f4e687]
+              - row [ref=f4e688]:
+                - cell "BHARTIARTL" [ref=f4e689]
+                - cell "long" [ref=f4e495]
+                - cell "2025-11-04" [ref=f4e690]
+                - cell "2025-11-18" [ref=f4e691]
+                - cell "14d" [ref=f4e692]
+                - cell "+1.13%" [ref=f4e693]
+                - cell "+₹281" [ref=f4e694]
+          - generic "Pagination" [ref=f4e501]:
+            - button "Previous" [ref=f4e695]
+            - status [ref=f4e502]: 26–50 of 118
+            - button "Next" [ref=f4e503]
+      - link "Run a pre-trade check →" [ref=f4e505] [cursor=pointer]:
+        - /url: /check
+  - contentinfo [ref=f4e62]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=f4e63]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=f4e64]
+  - generic [aria-hidden] [ref=f4e506]: "-9%"

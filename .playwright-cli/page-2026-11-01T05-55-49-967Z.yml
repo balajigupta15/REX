@@ -1,0 +1,57 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - link "R Rex coach with a memory" [ref=f6e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f6e5]: R
+        - generic [ref=f6e6]: Rex
+        - generic [ref=f6e7]: coach with a memory
+      - navigation [ref=f6e8]:
+        - link "Home" [ref=f6e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=f6e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=f6e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=f6e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=f6e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=f6e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=f6e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=f6e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=f6e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=f6e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=f6e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=f6e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=f6e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=f6e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=f6e23]:
+        - generic [ref=f6e28]: Ctrl K
+  - main [ref=f6e29]:
+    - generic [ref=f6e30]:
+      - generic [ref=f6e32]:
+        - heading "Trade journal" [level=1] [ref=f6e33]
+        - paragraph [ref=f6e34]: Import a broker tradebook (CSV). Rex pairs fills into round trips, tags the market context at each entry, and finds the setups you keep repeating.
+      - generic [ref=f6e36]:
+        - button "Drop your tradebook CSV here, or click to choose Zerodha-style columns (symbol, trade_date, trade_type, quantity, price). Headers are auto-mapped. Stays on this machine." [ref=f6e37] [cursor=pointer]:
+          - generic [ref=f6e42]: Drop your tradebook CSV here, or click to choose
+          - generic [ref=f6e43]: Zerodha-style columns (symbol, trade_date, trade_type, quantity, price). Headers are auto-mapped. Stays on this machine.
+        - generic [ref=f6e44]:
+          - button "Load sample journal" [ref=f6e45]
+          - link "Download sample CSV" [ref=f6e50] [cursor=pointer]:
+            - /url: http://localhost:8000/trades/sample
+          - paragraph [ref=f6e56]: The sample is synthetic trading behaviour on real prices. It is always labelled SAMPLE DATA.
+  - contentinfo [ref=f6e62]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=f6e63]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=f6e64]

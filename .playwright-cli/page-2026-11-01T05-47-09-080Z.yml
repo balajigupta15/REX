@@ -1,0 +1,139 @@
+- generic [active] [ref=f3e1]:
+  - banner [ref=f3e2]:
+    - generic [ref=f3e3]:
+      - link "R Rex coach with a memory" [ref=f3e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f3e5]: R
+        - generic [ref=f3e6]: Rex
+        - generic [ref=f3e7]: coach with a memory
+      - navigation [ref=f3e8]:
+        - link "Home" [ref=f3e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=f3e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=f3e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=f3e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=f3e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=f3e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=f3e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=f3e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=f3e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=f3e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=f3e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=f3e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=f3e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=f3e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=f3e23]:
+        - generic [ref=f3e28]: Ctrl K
+  - main [ref=f3e29]:
+    - generic [ref=f3e30]:
+      - generic [ref=f3e31]:
+        - generic [ref=f3e32]: Crypto
+        - navigation [ref=f3e35]:
+          - link "Crypto Build" [ref=f3e36] [cursor=pointer]:
+            - /url: /crypto
+          - link "Results" [ref=f3e37] [cursor=pointer]:
+            - /url: /crypto/results
+          - link "Refine" [ref=f3e38] [cursor=pointer]:
+            - /url: /crypto/refine
+          - link "Crypto Tracker" [ref=f3e39] [cursor=pointer]:
+            - /url: /crypto/tracker
+          - link "Last time" [ref=f3e40] [cursor=pointer]:
+            - /url: /crypto/memory
+        - generic [ref=f3e41]: BTC · ETH · SOL (USDT) · separate from the NSE stock section
+      - generic [ref=f3e42]:
+        - generic [ref=f3e43]: Connecting…
+        - generic [ref=f3e46]: Binance public price, REST poll about every 3 s · 24/7 market, always open · times in UTC
+      - generic [ref=f3e47]:
+        - generic [ref=f3e49]:
+          - heading "Crypto strategy builder" [level=1] [ref=f3e50]
+          - paragraph [ref=f3e51]: Describe a strategy in plain English or pick the rules yourself. Test it on real Binance candles (daily, 4-hour or 1-hour), with 10 bps default costs. Rex checks its crypto memory first.
+        - generic [ref=f3e52]:
+          - generic [ref=f3e53]:
+            - heading "Describe your strategy" [level=3] [ref=f3e55]
+            - paragraph [ref=f3e56]: "Name the coin (BTC, ETH, SOL) and optionally the candle size (daily, 4h, 1h). Same rule parser as the stock section: N-candle breakout, MA crossover, RSI, mean reversion, plus hold, stop-loss and take-profit. On 1h/4h charts every “day” in your rule means one candle."
+          - generic [ref=f3e57]:
+            - textbox "Describe your crypto strategy" [ref=f3e58]:
+              - /placeholder: e.g. Buy ETH on 4h when price breaks 20-day high, hold 6 hours, stop 3%
+            - generic [ref=f3e59]:
+              - generic [ref=f3e60]: "Try:"
+              - button "BTC breakout (daily)" [ref=f3e61]
+              - button "ETH 4h breakout" [ref=f3e62]
+              - button "SOL 1h RSI" [ref=f3e63]
+              - generic [ref=f3e64]:
+                - generic [ref=f3e65]: 0/1000
+                - button "Parse" [disabled]
+        - generic [ref=f3e66]:
+          - generic [ref=f3e67]:
+            - generic [ref=f3e68]:
+              - heading "Setup" [level=3] [ref=f3e69]
+              - paragraph [ref=f3e70]: Buy when the close breaks above the highest high of the previous N days.
+            - generic [ref=f3e71]:
+              - generic [ref=f3e72]:
+                - generic [ref=f3e73]:
+                  - generic [ref=f3e74]: Coin
+                  - combobox "Coin" [ref=f3e75]:
+                    - option "Bitcoin (BTC/USDT)" [selected]
+                    - option "Ethereum (ETH/USDT)"
+                    - option "Solana (SOL/USDT)"
+                - generic [ref=f3e76]:
+                  - generic [ref=f3e77]: Candles
+                  - combobox "Candles" [ref=f3e78]:
+                    - option "Daily (1d)" [selected]
+                    - option "4-hour (4h)"
+                    - option "1-hour (1h)"
+                - generic [ref=f3e79]:
+                  - generic [ref=f3e80]: Template
+                  - combobox "Template" [ref=f3e81]:
+                    - 'option "Breakout: N-day high" [selected]'
+                    - option "Moving-average crossover"
+                    - option "RSI oversold / overbought"
+                    - option "Mean reversion (z-score)"
+              - generic [ref=f3e82]:
+                - generic [ref=f3e83]:
+                  - text: Parameters
+                  - generic [ref=f3e84]: (in days)
+                - generic [ref=f3e86]:
+                  - generic [ref=f3e87]: Lookback N (days)
+                  - spinbutton "Lookback N (days)" [ref=f3e88]: "20"
+              - generic [ref=f3e89]:
+                - generic [ref=f3e90]:
+                  - text: Exits
+                  - generic [ref=f3e91]: (hold is counted in days)
+                - generic [ref=f3e92]:
+                  - generic [ref=f3e93]:
+                    - generic [ref=f3e94]: Max hold (trading days)
+                    - spinbutton "Max hold (trading days)" [ref=f3e95]: "10"
+                  - generic [ref=f3e96]:
+                    - generic [ref=f3e97]: Stop-loss %(optional)
+                    - spinbutton "Stop-loss %(optional)" [ref=f3e98]
+                  - generic [ref=f3e99]:
+                    - generic [ref=f3e100]: Take-profit %(optional)
+                    - spinbutton "Take-profit %(optional)" [ref=f3e101]
+              - generic [ref=f3e102]:
+                - generic [ref=f3e103]: Round-trip cost (bps)
+                - spinbutton "Round-trip cost (bps)" [ref=f3e104]: "10"
+                - paragraph [ref=f3e105]: "ASSUMPTION: 10 bps default for crypto (fees plus slippage), editable."
+              - generic [ref=f3e106]:
+                - button "Run backtest" [ref=f3e107]
+                - generic [ref=f3e110]: "Locked final period: the last 365 days. It is only shown as the “locked” window."
+          - generic [ref=f3e112]:
+            - heading "Last time (crypto)" [level=3] [ref=f3e119]
+            - paragraph [ref=f3e121]: Price moves after each run come from real Binance daily closes. Crypto memory is kept apart from your stock memory.
+      - paragraph [ref=f3e122]: Rex never places orders. You trade on your own exchange (Binance, Coinbase, WazirX, CoinDCX or any other); Rex only follows the price and the strategy's rules. Crypto is highly volatile and trades 24/7. Educational research on historical data, not investment advice.
+  - contentinfo [ref=f3e123]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=f3e124]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=f3e125]

@@ -1,0 +1,47 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "R Rex coach with a memory" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: R
+        - generic [ref=e6]: Rex
+        - generic [ref=e7]: coach with a memory
+      - navigation [ref=e8]:
+        - link "Home" [ref=e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=e23]:
+        - generic [ref=e28]: Ctrl K
+  - main [ref=e29]:
+    - generic [ref=e32]:
+      - heading "Strategy builder" [level=1] [ref=e33]
+      - paragraph [ref=e34]: Pick a template and a stock, set the parameters and costs, run. Rex checks its memory first and tells you what it already knows about this setup.
+  - contentinfo [ref=e36]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=e37]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=e38]

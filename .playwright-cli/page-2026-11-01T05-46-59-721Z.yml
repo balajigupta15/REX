@@ -1,0 +1,45 @@
+- generic [active] [ref=f2e1]:
+  - banner [ref=f2e2]:
+    - generic [ref=f2e3]:
+      - link "R Rex coach with a memory" [ref=f2e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f2e5]: R
+        - generic [ref=f2e6]: Rex
+        - generic [ref=f2e7]: coach with a memory
+      - navigation [ref=f2e8]:
+        - link "Home" [ref=f2e9] [cursor=pointer]:
+          - /url: /
+        - link "Agent" [ref=f2e10] [cursor=pointer]:
+          - /url: /ai
+        - link "Build" [ref=f2e11] [cursor=pointer]:
+          - /url: /build
+        - link "Results" [ref=f2e12] [cursor=pointer]:
+          - /url: /results
+        - link "Refine" [ref=f2e13] [cursor=pointer]:
+          - /url: /refine
+        - link "Lab" [ref=f2e14] [cursor=pointer]:
+          - /url: /lab
+        - link "Tracker" [ref=f2e15] [cursor=pointer]:
+          - /url: /paper
+        - link "Journal" [ref=f2e16] [cursor=pointer]:
+          - /url: /journal
+        - link "Pre-Trade Check" [ref=f2e17] [cursor=pointer]:
+          - /url: /check
+        - link "Scout" [ref=f2e18] [cursor=pointer]:
+          - /url: /scout
+        - link "Research" [ref=f2e19] [cursor=pointer]:
+          - /url: /research
+        - link "Memory" [ref=f2e20] [cursor=pointer]:
+          - /url: /memory
+        - link "Crypto" [ref=f2e21] [cursor=pointer]:
+          - /url: /crypto
+        - link "Data" [ref=f2e22] [cursor=pointer]:
+          - /url: /data
+      - button "Search assets" [ref=f2e23]:
+        - generic [ref=f2e28]: Ctrl K
+  - main [ref=f2e29]:
+    - paragraph [ref=f2e30]: Loading…
+  - contentinfo [ref=f2e31]:
+    - text: Educational research on historical data. Paper only. Not investment advice. Past performance does not predict future results.
+    - generic [ref=f2e32]: Rex is a strategy and memory layer. It is not a broker and places no orders.
+  - alert [ref=f2e33]
