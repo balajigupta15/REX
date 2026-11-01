@@ -4,24 +4,7 @@
 
 Research agents help explore and refine ideas. Transparent metrics, explicit assumptions, and deterministic risk checks make results inspectable. Persistent memory carries useful lessons into the next run. **Educational research on historical data. Paper only. Not investment advice. Rex places no orders.**
 
-![home](docs/screenshots/01-home.png)
-
-## Run it (one command)
-
-    ./start.sh          # API http://localhost:8000/docs  +  UI http://localhost:3000   (first run installs deps and builds)
-
-Needs Python 3.10+ and Node 20+. It runs **offline** by default (`REX_OFFLINE=1`: bundled price cache for 10 NSE stocks and a seeded memory of
-about 55 backtests, ~90 lessons, plus a clearly labelled SAMPLE journal). `REX_OFFLINE=0 ./start.sh` fetches live prices from yfinance.
-No LLM and no API key are needed (an optional `GEMINI_API_KEY` only improves the plain-English parser). Optional env vars are in `.env.example`.
-
-### Or with Docker (api + web + a data pipeline)
-
-    cp .env.example .env          # optional, everything has defaults
-    docker compose up --build     # web http://localhost:3000   api http://localhost:8000/docs
-    docker compose exec pipeline python -m pipeline status     # freshness per symbol
-
-Three containers share named volumes (`sqlite`, `store`, `data_cache`): **api** (FastAPI), **web** (Next.js standalone), **pipeline** (keeps the price store fresh). The first start copies the shipped demo memory DB into the empty volume; it never overwrites an existing one. Healthchecks gate the start order (web and pipeline wait for a healthy api). Set `REX_PIPELINE_OFFLINE=1` to seed the store from the bundled cache with no network at all.
-`docker compose config -q` is validated in CI; the image build runs there too (`.github/workflows/ci.yml`: pytest, `tsc`, `next build`, compose build). The images were **not** built on the dev box (no Docker daemon there), so the first `docker compose build` on your machine is the real test. The Yugabyte service is likewise untested as a container; the adapter itself was run against a real PostgreSQL server (the same wire protocol, full suite) and against SQLite.
+![Rex research workspace](docs/screenshots/01-home.png)
 
 ## Architecture
 
@@ -43,6 +26,7 @@ flowchart LR
     LD["loaders: store first, CSV cache fallback"]
     BT["backtest engine + cost models"]
     Q["quant: refine, PBO, DSR, walk-forward, lab"]
+    AG["AI research agents + agent desk"]
     TR["live trackers (NSE, crypto)"]
     MEM[("operational DB adapter")]
   end
@@ -59,8 +43,10 @@ flowchart LR
   XC --> ST
   ST --> LD
   LD --> BT --> Q
+  AG --> BT
   BT --> MEM
   TR --> MEM
+  AG --> MEM
   CG --> API
   GN --> API
   MEM -->|REX_DB_URL reachable| YB
@@ -69,6 +55,23 @@ flowchart LR
   MEM --> MEKO
   API <--> WEB
 ```
+
+## Run it (one command)
+
+    ./start.sh          # API http://localhost:8000/docs  +  UI http://localhost:3000   (first run installs deps and builds)
+
+Needs Python 3.10+ and Node 20+. It runs **offline** by default (`REX_OFFLINE=1`: bundled price cache for 10 NSE stocks and a seeded memory of
+about 55 backtests, ~90 lessons, plus a clearly labelled SAMPLE journal). `REX_OFFLINE=0 ./start.sh` fetches live prices from yfinance.
+No LLM and no API key are needed (an optional `GEMINI_API_KEY` only improves the plain-English parser). Optional env vars are in `.env.example`.
+
+### Or with Docker (api + web + a data pipeline)
+
+    cp .env.example .env          # optional, everything has defaults
+    docker compose up --build     # web http://localhost:3000   api http://localhost:8000/docs
+    docker compose exec pipeline python -m pipeline status     # freshness per symbol
+
+Three containers share named volumes (`sqlite`, `store`, `data_cache`): **api** (FastAPI), **web** (Next.js standalone), **pipeline** (keeps the price store fresh). The first start copies the shipped demo memory DB into the empty volume; it never overwrites an existing one. Healthchecks gate the start order (web and pipeline wait for a healthy api). Set `REX_PIPELINE_OFFLINE=1` to seed the store from the bundled cache with no network at all.
+`docker compose config -q` is validated in CI; the image build runs there too (`.github/workflows/ci.yml`: pytest, `tsc`, `next build`, compose build). The images were **not** built on the dev box (no Docker daemon there), so the first `docker compose build` on your machine is the real test. The Yugabyte service is likewise untested as a container; the adapter itself was run against a real PostgreSQL server (the same wire protocol, full suite) and against SQLite.
 
 **Databases.** Operational data (strategy-run memory and lessons, tracker sessions, journal, crypto memory, pipeline run log, AI agent runs) goes through one thin adapter, `backend/app/db.py`. With `REX_DB_URL` set (Docker compose sets it) and reachable at start-up it is **YugabyteDB** (YSQL, the PostgreSQL protocol, port 5433); otherwise it is **SQLite**, which is also what the tests use. `GET /health` returns `"db": "yugabyte"` or `"sqlite"`. Schemas are created automatically; a fresh Yugabyte is filled once from the shipped SQLite demo memory (`REX_DB_IMPORT=0` to skip). **Meko** (optional, `MEKO_TOKEN`) adds semantic memory and retrieval over MCP. The Parquet price store and its catalog are not operational data and stay on disk.
 
@@ -107,6 +110,8 @@ On `/ai`, **Your agents** has a gallery: hire a preset (Trading Agent, Research 
 - **Non-trading agents** write a facts-only report from the existing endpoints (`/crypto/price`, `/assets/quote`, `/news`, `/research/{ticker}`, a simple MA-crossover check, strategy-run memory). They have no deploy option.
 - **Trading agents** run the research swarm. After a run that produced a strategy, **Deploy to market** starts a *paper* deployment on the existing live tracker (`POST /ai/versions/{id}/track`): real-time price, signals/alerts and paper P&L since entry. It is labeled "Paper / signals only. No real orders are placed." A Live badge shows on the card; **Stop** calls `POST /ai/watches/{id}/stop`.
 - Agents and deployments are stored in this browser (`localStorage`); the watch itself lives in the backend DB.
+
+![Latest AI research run: agent desk, evidence review, and strategy results](docs/screenshots/13-ai-builder.png)
 
 ## Plain-English strategies
 On Build, type a strategy ("Buy TCS when the 50 day average crosses above the 200 day, 4% stop, hold 3 weeks"), press **Parse**, check the parsed-rules card and the filled form, then **Run backtest**. Nothing runs until you click.
