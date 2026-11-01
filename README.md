@@ -1,8 +1,8 @@
-# Rex: the trading coach with a memory
+# Rex: AI-powered quant research platform
 
-Test an idea, refine it without fooling yourself, find your repeat mistakes from a broker tradebook, and get a proceed / reduce / wait check
-before the next trade. Rex remembers every run and lesson. **Educational research on historical data. Paper only. Not investment advice.
-Rex is a strategy and memory layer, not a broker: it places no orders.**
+**Turn market hypotheses into evidence.** Rex is a quant research platform for NSE equities and crypto. Build a strategy, run cost-aware backtests, challenge results with locked-period and walk-forward validation, then follow them in a paper tracker—all in one research loop.
+
+Research agents help explore and refine ideas. Transparent metrics, explicit assumptions, and deterministic risk checks make results inspectable. Persistent memory carries useful lessons into the next run. **Educational research on historical data. Paper only. Not investment advice. Rex places no orders.**
 
 ![home](docs/screenshots/01-home.png)
 
@@ -50,7 +50,7 @@ flowchart LR
     YB[("YugabyteDB (YSQL) primary")]
     SQ[("SQLite fallback")]
   end
-  MEKO["Meko MCP memory mirror (optional)"]
+  MEKO["Meko MCP research memory (optional)"]
   WEB["web container (Next.js)"]
   YF --> ING
   CX --> ING
@@ -70,11 +70,11 @@ flowchart LR
   API <--> WEB
 ```
 
-**Databases.** Operational data (strategy-run memory and lessons, tracker sessions, journal, crypto memory, pipeline run log, AI agent runs) goes through one thin adapter, `backend/app/db.py`. With `REX_DB_URL` set (Docker compose sets it) and reachable at start-up it is **YugabyteDB** (YSQL, the PostgreSQL protocol, port 5433); otherwise it is **SQLite**, which is also what the tests use. `GET /health` returns `"db": "yugabyte"` or `"sqlite"`. Schemas are created automatically; a fresh Yugabyte is filled once from the shipped SQLite demo memory (`REX_DB_IMPORT=0` to skip). **Meko** (MCP, optional, `MEKO_TOKEN`) stays a memory mirror next to the database. The Parquet price store and its catalog are not operational data and stay on disk.
+**Databases.** Operational data (strategy-run memory and lessons, tracker sessions, journal, crypto memory, pipeline run log, AI agent runs) goes through one thin adapter, `backend/app/db.py`. With `REX_DB_URL` set (Docker compose sets it) and reachable at start-up it is **YugabyteDB** (YSQL, the PostgreSQL protocol, port 5433); otherwise it is **SQLite**, which is also what the tests use. `GET /health` returns `"db": "yugabyte"` or `"sqlite"`. Schemas are created automatically; a fresh Yugabyte is filled once from the shipped SQLite demo memory (`REX_DB_IMPORT=0` to skip). **Meko** (optional, `MEKO_TOKEN`) adds semantic memory and retrieval over MCP. The Parquet price store and its catalog are not operational data and stay on disk.
 
 Every chart and number in the UI comes from the API; the API computes from stored real prices. Nothing in Rex places an order.
 
-## What is in it
+## The research workspace
 
 | Page | What it does |
 |---|---|
@@ -184,9 +184,14 @@ All free, none needs a key. The first source in a chain that answers wins, and t
 
 Other endpoints: `GET /assets/search?q=`, `/assets/quote?symbol=`, `/assets/meta?symbol=`, `/news?symbol=`.
 
-## Memory backends
-SQLite is always the source of truth. With `MEKO_TOKEN` set, lessons and journal patterns are also mirrored to **Meko** over MCP
-(`conversation_create`, `memory_add`, `memory_search`; verified against the live server on 1 Nov 2026) and recalled on the check page.
+## Meko: persistent research memory
+
+Rex keeps canonical runs, journal records, and risk metrics in its operational database, with price history in the Parquet store. When `MEKO_TOKEN` is set, it also sends strategy summaries, lessons, and journal patterns to **Meko** over MCP. Rex retrieves related memories in the Pre-Trade Check and AI research workflow, bringing earlier findings into view. Meko is optional: if it is unavailable, Rex continues with its local stores.
+
+Today, Meko gives Rex durable, meaning-based recall beyond a single research run. The larger opportunity is a shared memory for specialist agents: remember which hypotheses were tested, on which markets and timeframes, what held up out of sample, and what failed. Agents could reuse reviewed findings across sessions instead of repeating dead ends, while Rex continues to calculate and validate every result. Over time, Rex can start each run with a growing body of evidence.
+
+The integration currently uses `conversation_create`, `memory_add`, and `memory_search` (verified against the live server on 1 Nov 2026). Shared knowledge promotion and decision traces are potential next steps, not capabilities Rex currently relies on.
+
 Optional "Explain" buttons use `GROQ_API_KEY` or `GEMINI_API_KEY` (default model `gemini-3.6-flash`) and are hidden without a key.
 
 ## Layout
