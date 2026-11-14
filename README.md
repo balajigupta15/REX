@@ -1,4 +1,6 @@
 # Rex: AI-powered quant research platform
+team mates https://github.com/adityakumarroy67
+
 
 **Turn market hypotheses into evidence.** Rex is a quant research platform for NSE equities and crypto. Build a strategy, run cost-aware backtests, challenge results with locked-period and walk-forward validation, then follow them in a paper tracker—all in one research loop.
 
